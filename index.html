@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="send.php">
+    <link href="image/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <title>vanna-lux.by</title>
+</head>
+<body>
+    <header class="shadow_main bg_color-white">
+        <div class="flex-row flex-center flex-align_c gap8 m-flex-between">
+            
+            <div class="burger-icon m-vis">
+                <img src="image/BURGER_open.svg" alt="">
+            </div>
+
+            <a href="#" class="pointer">
+                <img src="image/logo_container.svg" alt="" class="pointer">
+            </a>
+            <ul class="flex-row flex-align_c gap4 nav_container">
+                <li>
+                    <a href="#" class="btn_text">Услуги</a>
+                </li>
+                <li>
+                    <a href="#" class="btn_text">Процесс</a>
+                </li>
+                <li>
+                    <a href="#" class="btn_text">Наши работы</a>
+                </li>
+                <li>
+                    <a href="#" class="btn_text">Отзывы</a>
+                </li>
+                <li>
+                    <a href="#" class="btn_text">Сертификаты</a>
+                </li>
+                <li>
+                    <a href="#" class="btn_text">Контакты</a>
+                </li>
+                <li>
+                    <a href="#" class="btn_text">Стоимость</a>
+                </li>
+                <li>
+                    <a href="vacancy.html" class="btn_text">Вакансии</a>
+                </li>
+                <li class="m-vis" style="flex-grow: 1;"></li>
+                <li class="m-vis">
+                    <div class="flex-row flex-align_c">
+                        <img src="image/icon-mtc.svg" class="border8 shadow_icon pointer" alt="">
+                        <p class="text-num color-link">+375(29) 540-45-25</p>
+                    </div>
+                </li>
+                <li class="m-vis">
+                    <div class="flex-row flex-align_c mgv8">
+                        <img src="image/icon-a1.svg" class="border8 shadow_icon pointer" alt="">
+                        <p class="text-num color-link">+375(29) 670-45-25</p>
+                    </div>
+                </li>
+                <li class="m-vis" style="flex-grow: 1;"></li>
+            </ul>
+
+            <div class="burger-icon-contact m-vis">
+                <img src="image/BURGER_open.svg" alt="">
+            </div>
+            <div class="contact_container none">
+                <div class="flex-col contact_btn shadow_icon bg_color-white">
+                    <div class="flex-row flex-align_c">
+                        <img src="image/icon-mtc.svg" class="border8 shadow_icon pointer" alt="">
+                        <p class="text-num color-link">+375(29) 540-45-25</p>
+                        <img src="image/icon-drop_down.svg" alt="">
+                    </div>
+                    <div class="flex-row flex-align_c mgv8">
+                        <img src="image/icon-a1.svg" class="border8 shadow_icon pointer" alt="">
+                        <p class="text-num color-link">+375(29) 670-45-25</p>
+                    </div>
+                    <p class="p_discription color-dark_sec mgv8">ежедневно с 8.00 до 22.00</p>
+                    <div class="flex-row flex-align_c gap2 mgv12">
+                        <div class="line solid_border stretch_self"></div>
+                        <p class="p_discription color-dark_sec">Мессенджеры и соц.сети</p>
+                        <div class="line solid_border stretch_self"></div>
+                    </div>
+                    <div class="flex-row gap8 mgv8">
+                        <img src="image/icon-whatsapp.svg" alt="">
+                        <img src="image/icon-telegram.svg" alt="">
+                        <img src="image/icon-viber.svg" alt="">
+                        <img src="image/icon-instagram.svg" alt="">
+                        <img src="image/icon-youtube.svg" alt="">
+                    </div>
+                    <div class="flex-row flex-align_c gap2 mgv12">
+                        <div class="line solid_border stretch_self"></div>
+                        <p class="p_discription color-dark_sec">Или</p>
+                        <div class="line solid_border stretch_self"></div>
+                    </div>
+                    <form id="contact-form" class="flex-col mgv12">
+                        <label for="message">Перезвоните мне</label>
+                        <input type="text" class="p_main mgv8" id="message" name="message" placeholder="+375" autocomplete="off" required>
+                        <button type="submit" class="btn_fill p_main mgv12">Жду звонка</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container_main flex-col flex-align_c ">
+
+        <!-- MAIN_SCREEN -->
+        <div class="flex-row flex-align_c mgv94" style="align-self: flex-start;">
+            <div class="flex-col offer">
+                <h1>
+                    Полная <span class="color-link">реставрация</span> вашей старой <span class="color-link">ванны!</span>
+                </h1>
+                <p class="h1_sec mgv16">
+                    Ваша старая ванна станет как новая!
+                </p>
+                <div class="flex-row mgv24 gap16">
+                    <div class="flex-col stretch_self gap12">
+                        <div class="flex-row flex-align_c gap12">
+                            <img src="image/icon-advantages-smell.svg" alt="">
+                            <p class="p_big text-sbold">Весь процесс без запаха, пыли и грязи</p>
+                        </div>
+                        <div class="flex-row flex-align_c gap12">
+                            <img src="image/icon-advantages-order.svg" alt="">
+                            <p class="p_big text-sbold">Cертифицирован в Беларуси</p>
+                        </div>
+                        <div class="flex-row flex-align_c gap12">
+                            <img src="image/icon-advantages-def.svg" alt="">
+                            <p class="p_big text-sbold">Безопасно для здоровья</p>
+                        </div>
+                    </div>
+                        <div class="flex-col stretch_self gap12">
+                            <div class="flex-row flex-align_c gap12">
+                                <img src="image/icon-advantages-color.svg" alt="">
+                                <p class="p_big text-sbold">Не желтеет и не темнеет</p>
+                            </div>
+                            <div class="flex-row flex-align_c gap12">
+                                <img src="image/icon-advantages-calendar.svg" alt="">
+                                <p class="p_big text-sbold">Срок службы до 15 лет</p>
+                            </div>
+                            <div class="flex-row flex-align_c gap12">
+                                <img src="image/icon-advantages-pins.svg" alt="">
+                                <p class="p_big text-sbold">Используется в Европе и США</p>
+                            </div>
+                        </div>
+                </div>
+                <button class="btn_fill link_big self-start btn_big mgv32">Восстановить ванну</button>
+            </div>
+            <img src="image/Main image.jpg" alt="">
+        </div>
+        <!-- MAIN_SCREEN -->
+        
+
+
+        
+        <!-- METHOD -->
+        <h2 class="tac mgv128">Способы реставрации</h2>
+        <div class="flex-row flex-center gap24">
+            
+            <div class="flex-col flex-align_s cart_method mgv24 stretch_self">
+                <h3 class="lr12 mgv24">Эмалировка ванн</h3>
+                <p class="p_big color-dark_sec mgv4 lr12">Покраска кистью</p>
+                <img src="image/method-emal.png" alt="" width="100%">
+                <p class="p_main mgv8 lr12">Самый дешевый и простой способ реставрации ванны</p>
+                <div class="flex-col cart_method_bg mgv12 strech-self">
+                    <p class="p_main mgv12 color-dark_sec">
+                        Идеально для тех, кто сдает или снимает квартиру
+                    </p>
+                    <p class="p_main mgv8 color-dark_sec">
+                        Эмаль наносится кисточкой в несколько слоев.
+                    </p>
+                    <div class="flex-row  strech-self gap4 mgv32">
+                        <img src="image/icon-width.svg" alt="">
+                        <p class="p_big">Толщина слоя:</p>
+                        <div class="dush  stretch_self dush_bot" style="height: 16px;"></div>
+                        <p class="p_big">0.3 - 0.5 мм</p>
+                    </div>
+                    <div class="flex-row  strech-self gap4 mgv8">
+                        <img src="image/icon-time.svg" alt="">
+                        <p class="p_big">Срок службы:</p>
+                        <div class="dush  stretch_self dush_bot" style="height: 16px;"></div>
+                        <p class="p_big">3 - 5 лет</p>
+                    </div>
+                    <div class="flex-row  strech-self gap4 mgv8">
+                        <img src="image/icon-money.svg" alt="">
+                        <p class="p_big">Стоимость:</p>
+                        <div class="dush  stretch_self dush_bot" style="height: 16px;"></div>
+                        <p class="text-num">от 150 руб</p>
+                    </div>
+                    <button class="btn_fill mgv12" style="width: fit-content;">Выбрать материал</button>
+                </div>
+            </div>
+
+            <div class="flex-col flex-align_s cart_method mgv24 stretch_self">
+                <h3 class="lr12 mgv24">
+                    Наливная ванна
+                </h3>
+                <p class="p_big color-dark_sec mgv4 lr12">
+                    Жидкий акрил, стакрил
+                </p>
+                <img src="image/method-acril.png" alt="" width="100%">
+                <p class="p_main mgv8 lr12">
+                    Самый лучший и долговечный способ реставрации ванны
+                </p>
+                <div class="flex-col cart_method_bg mgv12 strech-self">
+                    <p class="p_main mgv12 color-dark_sec">
+                        Подходит для тех, кому важно качество и долговечность покрытия
+                    </p>
+                    <p class="p_main mgv8 color-dark_sec">
+                        Жидкий акрил наливается по поверхности ванны
+                    </p>
+                    <div class="flex-row  strech-self gap4 mgv32">
+                        <img src="image/icon-width.svg" alt="">
+                        <p class="p_big">Толщина слоя:</p>
+                        <div class="dush  stretch_self dush_bot" style="height: 16px;"></div>
+                        <p class="p_big">
+                            1.2 - 7.6 мм
+                        </p>
+                    </div>
+                    <div class="flex-row  strech-self gap4 mgv8">
+                        <img src="image/icon-time.svg" alt="">
+                        <p class="p_big">Срок службы:</p>
+                        <div class="dush  stretch_self dush_bot" style="height: 16px;"></div>
+                        <p class="p_big">
+                            до 20 лет
+                        </p>
+                    </div>
+                    <div class="flex-row  strech-self gap4 mgv8">
+                        <img src="image/icon-money.svg" alt="">
+                        <p class="p_big">Стоимость:</p>
+                        <div class="dush  stretch_self dush_bot" style="height: 16px;"></div>
+                        <p class="text-num">
+                            от 180 руб
+                        </p>
+                    </div>
+                    <button class="btn_fill mgv12" style="width: fit-content;">Выбрать материал</button>
+                </div>
+            </div>
+
+            <div class="flex-col flex-align_s cart_method mgv24 stretch_self">
+                <h3 class="lr12 mgv24">
+                    Акриловый вкладыш
+                </h3>
+                <p class="p_big color-dark_sec mgv4 lr12">
+                    Ванна в ванну
+                </p>
+                <img src="image/method-emal.png" alt="" width="100%">
+                <p class="p_main mgv8 lr12">
+                    Хороший, но самый дорогой из всех методов реставрации ванн
+                </p>
+                <div class="flex-col cart_method_bg mgv12 strech-self">
+                    <p class="p_main mgv12 color-dark_sec">
+                        Подходит для ванн с глубокими сколами и повреждениями
+                    </p>
+                    <p class="p_main mgv8 color-dark_sec">
+                        В старую ванну вклеивается новый вкладыш (ванна в ванну)
+                    </p>
+                    <div class="flex-row  strech-self gap4 mgv32">
+                        <img src="image/icon-width.svg" alt="">
+                        <p class="p_big">Толщина слоя:</p>
+                        <div class="dush  stretch_self dush_bot" style="height: 16px;"></div>
+                        <p class="p_big">
+                            1.5 - 2.0 мм
+                        </p>
+                    </div>
+                    <div class="flex-row  strech-self gap4 mgv8">
+                        <img src="image/icon-time.svg" alt="">
+                        <p class="p_big">Срок службы:</p>
+                        <div class="dush  stretch_self dush_bot" style="height: 16px;"></div>
+                        <p class="p_big">
+                            10 - 15 лет
+                        </p>
+                    </div>
+                    <div class="flex-row  strech-self gap4 mgv8">
+                        <img src="image/icon-money.svg" alt="">
+                        <p class="p_big">Стоимость:</p>
+                        <div class="dush  stretch_self dush_bot" style="height: 16px;"></div>
+                        <p class="text-num">
+                            от 400 руб
+                        </p>
+                    </div>
+                    <button class="btn_fill mgv12" style="width: fit-content;">Выбрать материал</button>
+                </div>
+            </div>
+
+        </div>
+        <!-- METHOD -->
+        <!-- TEXTAREA -->
+        <div class="flex-row flex-align_c gap32">
+            <img src="image/all_bath_1.png" alt="">
+            <div class="flex-col flex-align_c">
+                <h2 class="tac mgv128">
+                    Мы реставрируем любые ванны, поддоны, раковины, в любом состоянии и любой сложности!!!
+                </h2>
+                <h3 class="tac mgv24">
+                    Работаем в Минске и по всей Минской области за наличный и безналичный расчет!
+                </h3>
+                <img src="image/all_bath_item.png" class="mgv24" alt="">
+            </div>
+            <img src="image/all_bath_2.png" alt="">
+        </div>
+        <!-- TEXTAREA -->
+
+
+        <!-- CASE -->
+        <div class="flex-col flex-align_c case_block mgv128">
+            <h2 class="mgv48">Наши работы</h2>
+            <div class="slider-container ">
+                <div class="slider-element flex-col flex-align_c">
+                    <div class="flex-row gap32 mgv48">
+                        <div class="flex-col img-before padding20 shadow_main gap12 border20">
+                            <img src="image/before_01.png" class="shadow_main" alt="">
+                            <p class="p_big text-bold color-red">До</p>
+                        </div>
+                        <div class="flex-col img-after padding20 shadow_main gap12 border20">
+                            <img src="image/after_01.png" class="shadow_main" alt="">
+                            <p class="p_big text-bold color-green">После</p>
+                        </div>
+                    </div>
+
+                        <div class="flex-col gap4 padding10 bg_color-white shadow_main border20 flex-start video-pos">
+                        <div class="video-container border16 clip">
+                            <img class="video-play shadow_icon" src="image/icon-play.svg" alt="">
+                            <img class="video-bg" src="image/video-preview.png" alt="">
+                            <img class="video-bg" src="image/video_bg.png" alt="">
+
+                            </div>
+                        <h4 class="video-p color-dark_sec">Просушивание поверхности ванны</h4>
+                    </div>
+                    <div class="flex-col flex-align_c width50">
+                        <h3 class="mgv32">Наш комментарий</h3>
+                       <p class="p_main color-dark_sec tac mgv16">
+                            Эмаль на ванне истончилась и стала шершавой, в образовавшиеся поры со временем отлаживался водный камень, который приобрел коричневый цвет. Отмыть коричневые отложения уже было невозможно.
+                        </p>
+                        <p class="p_main color-dark_sec tac mgv8">
+                           Устранение: Реставрация происходила по методу «наливная ванна». В данном случае использовался наливной акрил Премиум класса, компании Plastall, произведенный совместно с Pabrec d.o.o (Slovenia, EU).
+                        </p>
+                    </div>
+
+                        <div class="slider_r">
+                        <img src="image/slider_arrowR.svg" class="" alt="">
+                    </div>
+                    <div class="slider_l">
+                        <img src="image/slider_arrowL.svg" class="" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CASE -->
+
+        <!-- REVIEW -->
+        <h2 class="mgv128">Отзывы</h2>
+        <h3 class="mgv16">Что о нас говорят клиенты?</h3>
+        <div class="flex-row gap24">
+            <div class="flex-col gap4 padding10 bg_color-white shadow_main border20 flex-start">
+                <div class="video-container border16 clip">
+                    <img class="video-play shadow_icon" src="image/icon-play.svg" alt="">
+                    <img class="video-bg" src="image/video-preview.png" alt="">
+                    <img class="video-bg" src="image/video_bg.png" alt="">
+                </div>
+                <h4 class="video-p color-dark_sec">Отзыв на пластол</h4>
+            </div>
+            <div class="flex-col gap4 padding10 bg_color-white shadow_main border20 flex-start">
+                <div class="video-container border16 clip">
+                    <img class="video-play shadow_icon" src="image/icon-play.svg" alt="">
+                    <img class="video-bg" src="image/video-preview.png" alt="">
+                    <img class="video-bg" src="image/video_bg.png" alt="">
+                </div>
+                <h4 class="video-p color-dark_sec">Отзыв на наливную ванну из жидкого акрила</h4>
+            </div>
+            <div class="flex-col gap4 padding10 bg_color-white shadow_main border20 flex-start">
+                <div class="video-container border16 clip">
+                    <img class="video-play shadow_icon" src="image/icon-play.svg" alt="">
+                    <img class="video-bg" src="image/video-preview.png" alt="">
+                    <img class="video-bg" src="image/video_bg.png" alt="">
+                </div>
+                <h4 class="video-p color-dark_sec">Отзыв на наливную ванну</h4>
+            </div>
+        </div>
+        
+
+        <!-- CLIENT_REVIEW -->
+        <h3 class="mgv48">Клиенты пишут нам:</h3>
+
+        <div class="flex-row mgv32 gap20">
+            
+            <div class="flex-col padding16 review">
+                <p class="p_main">
+                    "Мы с женой любим поотмокать в ванне, но на новом месте жительства ванна оказалась довольно старой и мы решили её обновить, тем более что подрастает сын (1мес) и мы хотим купать его в нормальной ванне, а не детской и неудобной. Заливали ванну пластолом, мастер работу выполнил быстро и качественно. Результатом более чем доволен."
+                </p>
+                <p class="p_main mgv16">
+                    Евгений
+                </p>
+                <p class="p_main mgv4">
+                    г. Минск, пр. Независимости
+                </p>
+            </div>
+            
+            <div class="flex-col padding16 review">
+                <p class="p_main">
+                    "После капитального ремонта дома встал вопрос о замене ванны. Изучив литературу решил попробовать реставрацию. Спасибо мастеру за полную информацию, оперативную и качественную работу, КОТОРОЙ Я ОЧЕНЬ ДОВОЛЕН. Белоснежная ванна радует всю семью, надеюсь не только на время гарантии."
+                </p>
+                <p class="p_main mgv16">
+                    Валерий
+                </p>
+                <p class="p_main mgv4">
+                    г. Минск, ул. П. Глебки
+                </p>
+            </div>
+            
+            <div class="flex-col padding16 review">
+                <p class="p_main">
+                    "Очень благодарна мастеру Дмитрию за профессионализм. Долго решались на реставрацию ванны, а теперь ни капельки не жалеем о своем выборе подрядчика, т.е. мастера Дмитрия и способе реставрации (наливная ванна). Качественно, быстро, надежно."
+                </p>
+                <p class="p_main mgv16">
+                    Елена
+                </p>
+                <p class="p_main mgv4">
+                    г. Минск, ул. Рафиева
+                </p>
+            </div>
+
+        </div>
+
+        <button class="btn_elevant btn_icon mgv24"> <img src="image/icon_add.svg" alt=""> Оставить отзыв</button>
+        <!-- END_CLIENT_REVIEW -->
+        <!-- END_REVIEW -->
+
+        <!-- PRICE -->
+        <h2 class="mgv128">
+            Наши цены
+        </h2>
+        <div class="flex-row cart_price_emal_bg mgv48 relative">
+            <div class="flex-col width295">
+                <h3 class="">Эмалировка ванн</h3>
+                <h4 class="mgv4">покраска кистью</h4>
+                <p class="p_main mgv12">
+                    Эмалировка ванн – это самый экономный способ реставрации ванны.
+                </p>
+                <p class="p_main mgv4">
+                    Наносится эмалью, таких компаний как:
+                </p>
+                <ul class="flex-col gap2">
+                    <li class="list">Tikkurila,</li>
+                    <li class="list">Ecovanna,</li>
+                    <li class="list">БЭП</li>
+                </ul>
+                <p class="p_main mgv8">
+                    В состав материалов входит сырье зарубежных производителей:
+                </p>
+                <div class="flex-row gap12 mgv8">
+                    <img src="image/company_DuPont.svg" alt="">
+                    <img src="image/company_BYK.svg" alt="">
+                    <img src="image/company_Tikkurila.svg" alt="">
+                </div>
+                <div class="p_main mgv12">
+                    Срок службы: 3-5 лет.
+                </div>
+            </div>
+            <div class="flex-row gap20" style="z-index: 2;">
+                
+                <!-- CART -->
+                <div class="flex-col cart_material">
+                    <p class="p_main tac mgv8">
+                        Эмалировка №1
+                    </p>
+                    <img src="image/emal-reflex.png" alt="" width="100%">
+                    <div class="flex-col lr12">
+                        <h4 class="mgv16">
+                            Эмаль Реафлекс
+                        </h4>
+                        <p class="p_main mgv4">
+                            Финляндия, Tikkurila
+                        </p>
+                            <div class="flex-row mgv12 gap4">
+                                <img src="image/icon-width.svg" alt="">
+                                <p class="p_main text-bold">
+                                    Время высыхания:
+                                </p>
+                                <div class="dush  stretch_self dush_bot" style="height: 14px;"></div>
+                                <p class="p_main">
+                                    4 дня
+                                </p>
+                            </div>
+                            <div class="flex-row mgv4 gap4">
+                                <img src="image/icon-time.svg" alt="">
+                                <p class="p_main text-bold">
+                                    Срок службы:
+                                </p>
+                                <div class="dush  stretch_self dush_bot" style="height: 14px;"></div>
+                                <p class="p_main">
+                                    до 3 лет
+                                </p>
+                            </div>
+                            <div class="flex-row mgv4 gap4">
+                                <img src="image/icon-size.svg" alt="">
+                                <p class="p_main text-bold">
+                                    Размер ванны:
+                                </p>
+                                <div class="dush  stretch_self dush_bot" style="height: 14px;"></div>
+                                <p class="p_main">
+                                    1,5 м
+                                </p>
+                            </div>
+                        <div class="flex-row flex-align_sb mgv16">
+                            <button class="btn_fill">
+                                Купить
+                            </button>
+                            <p class="link_big">120руб</p>
+                        </div>
+                        <div class="mgv24"></div>
+                    </div>
+                </div>
+                <!-- CART -->
+                <!-- CART -->
+                <div class="flex-col cart_material">
+                    <p class="p_main tac mgv8">
+                        Эмалировка №1
+                    </p>
+                    <img src="image/emal-reflex.png" alt="" width="100%">
+                    <div class="flex-col lr12">
+                        <h4 class="mgv16">
+                            Эмаль Реафлекс
+                        </h4>
+                        <p class="p_main mgv4">
+                            Финляндия, Tikkurila
+                        </p>
+                            <div class="flex-row mgv12 gap4">
+                                <img src="image/icon-width.svg" alt="">
+                                <p class="p_main text-bold">
+                                    Время высыхания:
+                                </p>
+                                <div class="dush  stretch_self dush_bot" style="height: 14px;"></div>
+                                <p class="p_main">
+                                    4 дня
+                                </p>
+                            </div>
+                            <div class="flex-row mgv4 gap4">
+                                <img src="image/icon-time.svg" alt="">
+                                <p class="p_main text-bold">
+                                    Срок службы:
+                                </p>
+                                <div class="dush  stretch_self dush_bot" style="height: 14px;"></div>
+                                <p class="p_main">
+                                    до 3 лет
+                                </p>
+                            </div>
+                            <div class="flex-row mgv4 gap4">
+                                <img src="image/icon-size.svg" alt="">
+                                <p class="p_main text-bold">
+                                    Размер ванны:
+                                </p>
+                                <div class="dush  stretch_self dush_bot" style="height: 14px;"></div>
+                                <p class="p_main">
+                                    1,5 м
+                                </p>
+                            </div>
+                        <div class="flex-row flex-align_sb mgv16">
+                            <button class="btn_fill">
+                                Купить
+                            </button>
+                            <p class="link_big">120руб</p>
+                        </div>
+                        <div class="mgv24"></div>
+                    </div>
+                </div>
+                <!-- CART -->
+                
+            </div>
+            <img src="image/emal_pic.png" height="100%" alt="" style="position: absolute; left: 450px; bottom: -175px; z-index: 1;">
+        </div>
+        <!-- END_PRICE -->
+        
+        
+
+        
+        
+    </div>
+    <img src="image/Vector.svg" alt="" class="">
+    <footer class="flex-col width100 flex-align_c footer_m_w">
+        <div class="flex-row footer m-flex-col flex-align_sb flex-align_c m-gap24">
+            <div class="flex-col width315 m-flex-c">
+                <img src="image/footer_logo.svg" alt="">
+                <p class="p_discription m_tac color-white">©2023 ООО «КДФТехноСистемс», ул. Монтажников, 9, Минск, Республика Беларусь УНП: 193562368,  </p>
+            </div>
+            <div class="flex-row gap32 m-flex-col m-gap24 m-flex-c">
+                <div class="flex-col flex-align_s m-flex-c">
+                    <p class="p_discription color-white">ежедневно с 9.00 до 21.00</p>
+                    <p class="p_main mgv8 color-white">+375(29) 670-45-25</p>
+                    <p class="p_main mgv4 color-white">+375(29) 670-45-25</p>
+                </div>
+                <div class="flex-col flex-align_s m-flex-c">
+                    <p class="p_discription color-white">Часто появляемся тут</p>
+                    <div class="flex-row flex-align_s gap4 mgv4">
+                        <img src="image/footer_icon-fb.svg" alt="">
+                        <img src="image/footer_icon-inst.svg" alt="">
+                        <img src="image/footer_icon-tg.svg" alt="">
+                        <img src="image/footer_icon-utube.svg" alt="">
+                        <img src="image/footer_icon-viber.svg" alt="">
+                        <img src="image/footer_icon-vk.svg" alt="">
+                        <img src="image/footer_icon-wa.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="p_discription color-white">разработка <i><a href="#" class="color-white">by to-to-to</a></i></p>
+    </footer>
+</body>
+</html>
+<!-- 
+    bgred
+    bgpurp
+    text-sbold
+-->
