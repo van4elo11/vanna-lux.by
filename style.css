@@ -359,6 +359,9 @@ h4{
 .width350{
     width: 350px;
 }
+.width385{
+    width: 385px;
+}
 .width450{
     width: 450px;
 }
@@ -598,6 +601,21 @@ header{
     justify-content: space-between;
     align-items: center;    
     padding: 28px 32px 34px 32px;
+}
+.cart_price_acril_bg{
+    padding: 128px 64px 128px 0px;
+    width: calc(100% - 64px);
+    justify-content: flex-end;
+    background: #FFFFFF;
+    box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.08), 0px 10px 11px 6px rgba(0, 0, 0, 0.08);
+    border-radius: 24px;
+}
+.price_class{
+    align-items: center;
+    width: calc(100% - 88px);
+    background: #FFFFFF;
+    box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.08), 0px 10px 11px 6px rgba(0, 0, 0, 0.08);
+    border-radius: 0px 0px 24px 24px;
 }
 .review{
     background: #FFFFFF;
