@@ -110,7 +110,7 @@
     <div class="container_main flex-col flex-align_c ">
 
         <!-- MAIN_SCREEN -->
-        <div class="flex-row flex-align_c mgv94" style="align-self: flex-start;">
+        <div class="flex-row flex-align_c mgv94 m-flex-col self-start">
             <div class="flex-col offer">
                 <h1>
                     Полная <span class="color-link">реставрация</span> вашей старой <span class="color-link">ванны!</span>
@@ -122,35 +122,35 @@
                     <div class="flex-col stretch_self gap12">
                         <div class="flex-row flex-align_c gap12">
                             <img src="image/icon-advantages-smell.svg" alt="">
-                            <p class="p_big text-sbold">Весь процесс без запаха, пыли и грязи</p>
+                            <p class="p_big text-sbold m-p_big">Весь процесс без запаха, пыли и грязи</p>
                         </div>
                         <div class="flex-row flex-align_c gap12">
                             <img src="image/icon-advantages-order.svg" alt="">
-                            <p class="p_big text-sbold">Cертифицирован в Беларуси</p>
+                            <p class="p_big text-sbold m-p_big">Cертифицирован в Беларуси</p>
                         </div>
                         <div class="flex-row flex-align_c gap12">
                             <img src="image/icon-advantages-def.svg" alt="">
-                            <p class="p_big text-sbold">Безопасно для здоровья</p>
+                            <p class="p_big text-sbold m-p_big">Безопасно для здоровья</p>
                         </div>
                     </div>
                         <div class="flex-col stretch_self gap12">
                             <div class="flex-row flex-align_c gap12">
                                 <img src="image/icon-advantages-color.svg" alt="">
-                                <p class="p_big text-sbold">Не желтеет и не темнеет</p>
+                                <p class="p_big text-sbold m-p_big">Не желтеет и не темнеет</p>
                             </div>
                             <div class="flex-row flex-align_c gap12">
                                 <img src="image/icon-advantages-calendar.svg" alt="">
-                                <p class="p_big text-sbold">Срок службы до 15 лет</p>
+                                <p class="p_big text-sbold m-p_big">Срок службы до 15 лет</p>
                             </div>
                             <div class="flex-row flex-align_c gap12">
                                 <img src="image/icon-advantages-pins.svg" alt="">
-                                <p class="p_big text-sbold">Используется в Европе и США</p>
+                                <p class="p_big text-sbold m-p_big">Используется в Европе и США</p>
                             </div>
                         </div>
                 </div>
                 <button class="btn_fill link_big self-start btn_big mgv32">Восстановить ванну</button>
             </div>
-            <img src="image/Main image.jpg" alt="">
+            <img src="image/Main image.jpg" class="m-width100" alt="">
         </div>
         <!-- MAIN_SCREEN -->
         
@@ -158,7 +158,7 @@
 
         <!-- METHOD -->
         <h2 class="tac mgv128">Способы реставрации</h2>
-        <div class="flex-row flex-center gap24">
+        <div class="flex-row flex-center gap24 wrap">
             
             <div class="flex-col flex-align_s cart_method mgv24 stretch_self">
                 <h3 class="lr12 mgv24">Эмалировка ванн</h3>
@@ -290,13 +290,13 @@
         <!-- METHOD -->
         
         <!-- PROCESS -->
-        <div class="flex-col relative">
-            <h2 class="mgv128 width662 self-center" style="z-index: 1;">
+        <div class="flex-col relative m-width_strech">
+            <h2 class="mgv128 width662 self-center m-width_strech m_tac" style="z-index: 1;">
                 Как происходит процесс реставрации ванны?
             </h2>
-            <img src="image/process_semen.png" alt="" style="position: absolute; z-index: 0; left: 50%; transform: translate(-50%, 0%); top: 120px;">
-            <div class="flex-row gap20 flex-align_s self-bot mgv94"   style="height: 365px; z-index: 1; margin-right: -75px;">
-                <div class="flex-col process_img self-start">
+            <img src="image/process_semen.png" alt="" class="process-image" style="">
+            <div class="flex-row gap20 flex-align_s self-bot mgv94 m-width_strech process-line-container m-mgv128"   style="">
+                <div class="flex-col process_img self-start m-self-end process1">
                 <div class="relative">
                     <img src="image/process_image_01.png" alt="">
                     <div class="flex-col flex-center flex-align_c" style="width: 44px; height: 44px; background-image: url('image/star_bg.svg'); position: absolute; right: -12px; bottom: -12px;">
@@ -309,7 +309,7 @@
                     Абразивная зачистка
                 </h4>
                 </div>
-                <div class="flex-col process_img self-center">
+                <div class="flex-col process_img self-center m-self-start process2">
                 <div class="relative">
                     <img src="image/process_image_02.png" alt="">
                     <div class="flex-col flex-center flex-align_c" style="width: 44px; height: 44px; background-image: url('image/star_bg.svg'); position: absolute; right: -12px; bottom: -12px;">
@@ -322,7 +322,7 @@
                     Обработка специальными средствами
                 </h4>
                 </div>
-                <div class="flex-col process_img self-bot">
+                <div class="flex-col process_img self-bot m-self-end process3">
                 <div class="relative">
                     <img src="image/process_image_03.png" alt="">
                     <div class="flex-col flex-center flex-align_c" style="width: 44px; height: 44px; background-image: url('image/star_bg.svg'); position: absolute; right: -12px; bottom: -12px;">
@@ -336,8 +336,8 @@
                 </h4>
                 </div>
             </div>
-            <div class="flex-row gap20 flex-align_s self-bot"   style="height: 400px; z-index: 1; margin-top: -50px;">
-                <div class="flex-col process_img self-start">
+            <div class="flex-row gap20 flex-align_s self-bot process-line_two-container"   style="">
+                <div class="flex-col process_img self-start process4">
                 <div class="relative">
                     <img src="image/process_image_04.png" alt="">
                     <div class="flex-col flex-center flex-align_c" style="width: 44px; height: 44px; background-image: url('image/star_bg.svg'); position: absolute; right: -12px; bottom: -12px;">
@@ -350,7 +350,7 @@
                     Обезжирование поверхности ванны
                 </h4>
                 </div>
-                <div class="flex-col process_img self-center">
+                <div class="flex-col process_img self-center process5">
                 <div class="relative">
                     <img src="image/process_image_05.png" alt="">
                     <div class="flex-col flex-center flex-align_c" style="width: 44px; height: 44px; background-image: url('image/star_bg.svg'); position: absolute; right: -12px; bottom: -12px;">
@@ -363,7 +363,7 @@
                     Нанесение жидкого акрила или стакрила
                 </h4>
                 </div>
-                <div class="flex-col process_video self-bot">
+                <div class="flex-col process_video self-bot process6">
                 <div class="relative">
                     <img src="image/process_image_06.png" alt="">
                     <div class="flex-col flex-center flex-align_c" style="width: 44px; height: 44px; background-image: url('image/star_bg.svg'); position: absolute; right: -12px; bottom: -12px;">
@@ -381,27 +381,27 @@
         <!-- END_PROCESS -->
         
         <!-- TEXTAREA -->
-        <div class="flex-row flex-align_c gap32">
-            <img src="image/all_bath_1.png" alt="">
-            <div class="flex-col flex-align_c">
+        <div class="flex-row flex-align_c gap32 m-width100">
+            <img src="image/all_bath_1.png" class="m-hide" alt="">
+            <div class="flex-col flex-align_c m-width100">
                 <h2 class="tac mgv128">
                     Мы реставрируем любые ванны, поддоны, раковины, в любом состоянии и любой сложности!!!
                 </h2>
                 <h3 class="tac mgv24">
                     Работаем в Минске и по всей Минской области за наличный и безналичный расчет!
                 </h3>
-                <img src="image/all_bath_item.png" class="mgv24" alt="">
+                <img src="image/all_bath_item.png" class="mgv24 m-width100" alt="">
             </div>
-            <img src="image/all_bath_2.png" alt="">
+            <img src="image/all_bath_2.png" class="m-hide" alt="">
         </div>
         <!-- TEXTAREA -->
 
 
 
         <!-- CASE -->
-        <div class="flex-col flex-align_c case_block mgv128">
+        <div class="flex-col flex-align_c case_block mgv128 m-width100">
             <h2 class="mgv48">Наши работы</h2>
-            <div class="slider-container ">
+            <div class="slider-container m-width100">
                 <div class="slider-element flex-col flex-align_c">
                     <div class="flex-row gap32 mgv48">
                         <div class="flex-col img-before padding20 shadow_main gap12 border20">
@@ -423,7 +423,7 @@
                             </div>
                         <h4 class="video-p color-dark_sec">Просушивание поверхности ванны</h4>
                     </div>
-                    <div class="flex-col flex-align_c width50">
+                    <div class="flex-col flex-align_c width50 m-width100 m-mgv-94">
                         <h3 class="mgv32">Наш комментарий</h3>
                        <p class="p_main color-dark_sec tac mgv16">
                             Эмаль на ванне истончилась и стала шершавой, в образовавшиеся поры со временем отлаживался водный камень, который приобрел коричневый цвет. Отмыть коричневые отложения уже было невозможно.
@@ -446,8 +446,8 @@
 
         <!-- REVIEW -->
         <h2 class="mgv128">Отзывы</h2>
-        <h3 class="mgv16">Что о нас говорят клиенты?</h3>
-        <div class="flex-row gap24">
+        <h3 class="mgv16 m_tac">Что о нас говорят клиенты?</h3>
+        <div class="flex-row gap24 m-width100">
             <div class="flex-col gap4 padding10 bg_color-white shadow_main border20 flex-start">
                 <div class="video-container border16 clip">
                     <img class="video-play shadow_icon" src="image/icon-play.svg" alt="">
@@ -473,12 +473,19 @@
                 <h4 class="video-p color-dark_sec">Отзыв на наливную ванну</h4>
             </div>
         </div>
+        <div class=" flex-row flex-align_c m-gap24 m-flex-end">
+            <img src="image/arrow_l.svg" alt="" class="mgv16 shadow_icon border8 m-vis">
+            <button class="btn_elevant btn_icon mgv24">
+                <img src="image/icon_add.svg" alt="">
+                Оставить видео отзыв
+            </button>
+            <img src="image/arrow_r.svg" alt="" class="mgv16 shadow_icon border8 m-vis">
+        </div>
         
 
         <!-- CLIENT_REVIEW -->
         <h3 class="mgv48">Клиенты пишут нам:</h3>
-
-        <div class="flex-row mgv32 gap20">
+        <div class="flex-row mgv32 gap20 m-width100">
             
             <div class="flex-col padding16 review">
                 <p class="p_main">
@@ -517,8 +524,14 @@
             </div>
 
         </div>
-
-        <button class="btn_elevant btn_icon mgv24"> <img src="image/icon_add.svg" alt=""> Оставить отзыв</button>
+        <div class="flex-row flex-align_c m-gap24 m-flex-end">
+            <img src="image/arrow_l.svg" alt="" class="shadow_icon border8 m-vis">
+            <button class="btn_elevant btn_icon mgv24">
+                <img src="image/icon_add.svg" alt="">
+                Оставить отзыв
+            </button>
+            <img src="image/arrow_r.svg" alt="" class="shadow_icon border8 m-vis">
+        </div>
         <!-- END_CLIENT_REVIEW -->
         <!-- END_REVIEW -->
 
@@ -527,7 +540,7 @@
             Наши цены
         </h2>
         <!-- PRICE_EMAL  -->
-        <div class="flex-row cart_price_emal_bg mgv48 relative">
+        <div class="flex-row cart_price_emal_bg mgv48 relative m-flex-col m-width100">
             <div class="flex-col width295">
                 <h3 class="">Эмалировка ванн</h3>
                 <h4 class="mgv4">покраска кистью</h4>
@@ -554,7 +567,7 @@
                     Срок службы: 3-5 лет.
                 </div>
             </div>
-            <div class="flex-row gap20" style="z-index: 2;">
+            <div class="flex-row gap20 m-gap8 m-mgv24" style="z-index: 2;">
                 
                 <!-- CART -->
                 <div class="flex-col cart_material">
@@ -562,40 +575,40 @@
                         Эмалировка №1
                     </p>
                     <img src="image/emal-reflex.png" alt="" width="100%">
-                    <div class="flex-col lr12">
-                        <h4 class="mgv16">
+                    <div class="flex-col lr12 m-lr4">
+                        <h4 class="mgv16 m_tac">
                             Эмаль Реафлекс
                         </h4>
-                        <p class="p_main mgv4">
+                        <p class="p_main mgv4 m_tac">
                             Финляндия, Tikkurila
                         </p>
-                            <div class="flex-row mgv12 gap4">
-                                <img src="image/icon-width.svg" alt="">
-                                <p class="p_main text-bold">
+                            <div class="flex-row mgv12 gap4 m-flex-col m-gap0">
+                                <img src="image/icon-width.svg m-hide" alt="">
+                                <p class="p_main text-bold m_tac">
                                     Время высыхания:
                                 </p>
-                                <div class="dush  stretch_self dush_bot" style="height: 14px;"></div>
-                                <p class="p_main">
+                                <div class="dush stretch_self dush_bot m-hide" style="height: 14px;"></div>
+                                <p class="p_main m_tac">
                                     4 дня
                                 </p>
                             </div>
-                            <div class="flex-row mgv4 gap4">
-                                <img src="image/icon-time.svg" alt="">
-                                <p class="p_main text-bold">
+                            <div class="flex-row mgv4 gap4 m-flex-col m-gap0">
+                                <img src="image/icon-time.svg m-hide" alt="">
+                                <p class="p_main text-bold m_tac">
                                     Срок службы:
                                 </p>
-                                <div class="dush  stretch_self dush_bot" style="height: 14px;"></div>
-                                <p class="p_main">
+                                <div class="dush stretch_self dush_bot m-hide" style="height: 14px;"></div>
+                                <p class="p_main m_tac">
                                     до 3 лет
                                 </p>
                             </div>
-                            <div class="flex-row mgv4 gap4">
-                                <img src="image/icon-size.svg" alt="">
-                                <p class="p_main text-bold">
+                            <div class="flex-row mgv4 gap4 m-flex-col m-gap0">
+                                <img src="image/icon-size.svg m-hide" alt="">
+                                <p class="p_main text-bold m_tac">
                                     Размер ванны:
                                 </p>
-                                <div class="dush  stretch_self dush_bot" style="height: 14px;"></div>
-                                <p class="p_main">
+                                <div class="dush stretch_self dush_bot m-hide" style="height: 14px;"></div>
+                                <p class="p_main m_tac">
                                     1,5 м
                                 </p>
                             </div>
@@ -615,40 +628,40 @@
                         Эмалировка №1
                     </p>
                     <img src="image/emal-reflex.png" alt="" width="100%">
-                    <div class="flex-col lr12">
-                        <h4 class="mgv16">
+                    <div class="flex-col lr12 m-lr4">
+                        <h4 class="mgv16 m_tac">
                             Эмаль Реафлекс
                         </h4>
-                        <p class="p_main mgv4">
+                        <p class="p_main mgv4 m_tac">
                             Финляндия, Tikkurila
                         </p>
-                            <div class="flex-row mgv12 gap4">
-                                <img src="image/icon-width.svg" alt="">
-                                <p class="p_main text-bold">
+                            <div class="flex-row mgv12 gap4 m-flex-col m-gap0">
+                                <img src="image/icon-width.svg m-hide" alt="">
+                                <p class="p_main text-bold m_tac">
                                     Время высыхания:
                                 </p>
-                                <div class="dush  stretch_self dush_bot" style="height: 14px;"></div>
-                                <p class="p_main">
+                                <div class="dush stretch_self dush_bot m-hide" style="height: 14px;"></div>
+                                <p class="p_main m_tac">
                                     4 дня
                                 </p>
                             </div>
-                            <div class="flex-row mgv4 gap4">
-                                <img src="image/icon-time.svg" alt="">
-                                <p class="p_main text-bold">
+                            <div class="flex-row mgv4 gap4 m-flex-col m-gap0">
+                                <img src="image/icon-time.svg m-hide" alt="">
+                                <p class="p_main text-bold m_tac">
                                     Срок службы:
                                 </p>
-                                <div class="dush  stretch_self dush_bot" style="height: 14px;"></div>
-                                <p class="p_main">
+                                <div class="dush stretch_self dush_bot m-hide" style="height: 14px;"></div>
+                                <p class="p_main m_tac">
                                     до 3 лет
                                 </p>
                             </div>
-                            <div class="flex-row mgv4 gap4">
-                                <img src="image/icon-size.svg" alt="">
-                                <p class="p_main text-bold">
+                            <div class="flex-row mgv4 gap4 m-flex-col m-gap0">
+                                <img src="image/icon-size.svg m-hide" alt="">
+                                <p class="p_main text-bold m_tac">
                                     Размер ванны:
                                 </p>
-                                <div class="dush  stretch_self dush_bot" style="height: 14px;"></div>
-                                <p class="p_main">
+                                <div class="dush stretch_self dush_bot m-hide" style="height: 14px;"></div>
+                                <p class="p_main m_tac">
                                     1,5 м
                                 </p>
                             </div>
@@ -669,8 +682,8 @@
 
         <!-- PRICE_ACRIL -->
         <div class="flex-row cart_price_acril_bg mgv48 relative">
-            <img src="image/acril_pic.png" alt="" style="position: absolute; left: 0px; bottom: 0px;">
-            <div class="flex-col width450">
+            <img src="image/acril_pic.png" alt="" style="">
+            <div class="flex-col width450 m-mgv250">
                 <h3 class="">
                     Наливная ванна
                 </h3>
@@ -693,111 +706,111 @@
             <div class="flex-row gap24 flex-align_c mgv32">
                 <div class="flex-row gap20">
                     <!-- CART -->
-                    <div class="flex-col cart_material">
-                        <p class="p_main tac mgv8">
-                            Эмалировка №1
+                <div class="flex-col cart_material">
+                    <p class="p_main tac mgv8">
+                        Эмалировка №1
+                    </p>
+                    <img src="image/emal-reflex.png" alt="" width="100%">
+                    <div class="flex-col lr12 m-lr4">
+                        <h4 class="mgv16 m_tac">
+                            Эмаль Реафлекс
+                        </h4>
+                        <p class="p_main mgv4 m_tac">
+                            Финляндия, Tikkurila
                         </p>
-                        <img src="image/emal-reflex.png" alt="" width="100%">
-                        <div class="flex-col lr12">
-                            <h4 class="mgv16">
-                                Эмаль Реафлекс
-                            </h4>
-                            <p class="p_main mgv4">
-                                Финляндия, Tikkurila
-                            </p>
-                                <div class="flex-row mgv12 gap4">
-                                    <img src="image/icon-width.svg" alt="">
-                                    <p class="p_main text-bold">
-                                        Время высыхания:
-                                    </p>
-                                    <div class="dush  stretch_self dush_bot" style="height: 14px;"></div>
-                                    <p class="p_main">
-                                        4 дня
-                                    </p>
-                                </div>
-                                <div class="flex-row mgv4 gap4">
-                                    <img src="image/icon-time.svg" alt="">
-                                    <p class="p_main text-bold">
-                                        Срок службы:
-                                    </p>
-                                    <div class="dush  stretch_self dush_bot" style="height: 14px;"></div>
-                                    <p class="p_main">
-                                        до 3 лет
-                                    </p>
-                                </div>
-                                <div class="flex-row mgv4 gap4">
-                                    <img src="image/icon-size.svg" alt="">
-                                    <p class="p_main text-bold">
-                                        Размер ванны:
-                                    </p>
-                                    <div class="dush  stretch_self dush_bot" style="height: 14px;"></div>
-                                    <p class="p_main">
-                                        1,5 м
-                                    </p>
-                                </div>
-                            <div class="flex-row flex-align_sb mgv16">
-                                <button class="btn_fill">
-                                    Купить
-                                </button>
-                                <p class="link_big">120руб</p>
+                            <div class="flex-row mgv12 gap4 m-flex-col m-gap0">
+                                <img src="image/icon-width.svg m-hide" alt="">
+                                <p class="p_main text-bold m_tac">
+                                    Время высыхания:
+                                </p>
+                                <div class="dush stretch_self dush_bot m-hide" style="height: 14px;"></div>
+                                <p class="p_main m_tac">
+                                    4 дня
+                                </p>
                             </div>
-                            <div class="mgv24"></div>
+                            <div class="flex-row mgv4 gap4 m-flex-col m-gap0">
+                                <img src="image/icon-time.svg m-hide" alt="">
+                                <p class="p_main text-bold m_tac">
+                                    Срок службы:
+                                </p>
+                                <div class="dush stretch_self dush_bot m-hide" style="height: 14px;"></div>
+                                <p class="p_main m_tac">
+                                    до 3 лет
+                                </p>
+                            </div>
+                            <div class="flex-row mgv4 gap4 m-flex-col m-gap0">
+                                <img src="image/icon-size.svg m-hide" alt="">
+                                <p class="p_main text-bold m_tac">
+                                    Размер ванны:
+                                </p>
+                                <div class="dush stretch_self dush_bot m-hide" style="height: 14px;"></div>
+                                <p class="p_main m_tac">
+                                    1,5 м
+                                </p>
+                            </div>
+                        <div class="flex-row flex-align_sb mgv16">
+                            <button class="btn_fill">
+                                Купить
+                            </button>
+                            <p class="link_big">120руб</p>
                         </div>
+                        <div class="mgv24"></div>
                     </div>
-                    <!-- END_CART -->
-                    <!-- CART -->
-                    <div class="flex-col cart_material">
-                        <p class="p_main tac mgv8">
-                            Эмалировка №1
+                </div>
+                <!-- END_CART -->
+                <!-- CART -->
+                <div class="flex-col cart_material">
+                    <p class="p_main tac mgv8">
+                        Эмалировка №1
+                    </p>
+                    <img src="image/emal-reflex.png" alt="" width="100%">
+                    <div class="flex-col lr12 m-lr4">
+                        <h4 class="mgv16 m_tac">
+                            Эмаль Реафлекс
+                        </h4>
+                        <p class="p_main mgv4 m_tac">
+                            Финляндия, Tikkurila
                         </p>
-                        <img src="image/emal-reflex.png" alt="" width="100%">
-                        <div class="flex-col lr12">
-                            <h4 class="mgv16">
-                                Эмаль Реафлекс
-                            </h4>
-                            <p class="p_main mgv4">
-                                Финляндия, Tikkurila
-                            </p>
-                                <div class="flex-row mgv12 gap4">
-                                    <img src="image/icon-width.svg" alt="">
-                                    <p class="p_main text-bold">
-                                        Время высыхания:
-                                    </p>
-                                    <div class="dush  stretch_self dush_bot" style="height: 14px;"></div>
-                                    <p class="p_main">
-                                        4 дня
-                                    </p>
-                                </div>
-                                <div class="flex-row mgv4 gap4">
-                                    <img src="image/icon-time.svg" alt="">
-                                    <p class="p_main text-bold">
-                                        Срок службы:
-                                    </p>
-                                    <div class="dush  stretch_self dush_bot" style="height: 14px;"></div>
-                                    <p class="p_main">
-                                        до 3 лет
-                                    </p>
-                                </div>
-                                <div class="flex-row mgv4 gap4">
-                                    <img src="image/icon-size.svg" alt="">
-                                    <p class="p_main text-bold">
-                                        Размер ванны:
-                                    </p>
-                                    <div class="dush  stretch_self dush_bot" style="height: 14px;"></div>
-                                    <p class="p_main">
-                                        1,5 м
-                                    </p>
-                                </div>
-                            <div class="flex-row flex-align_sb mgv16">
-                                <button class="btn_fill">
-                                    Купить
-                                </button>
-                                <p class="link_big">120руб</p>
+                            <div class="flex-row mgv12 gap4 m-flex-col m-gap0">
+                                <img src="image/icon-width.svg m-hide" alt="">
+                                <p class="p_main text-bold m_tac">
+                                    Время высыхания:
+                                </p>
+                                <div class="dush stretch_self dush_bot m-hide" style="height: 14px;"></div>
+                                <p class="p_main m_tac">
+                                    4 дня
+                                </p>
                             </div>
-                            <div class="mgv24"></div>
+                            <div class="flex-row mgv4 gap4 m-flex-col m-gap0">
+                                <img src="image/icon-time.svg m-hide" alt="">
+                                <p class="p_main text-bold m_tac">
+                                    Срок службы:
+                                </p>
+                                <div class="dush stretch_self dush_bot m-hide" style="height: 14px;"></div>
+                                <p class="p_main m_tac">
+                                    до 3 лет
+                                </p>
+                            </div>
+                            <div class="flex-row mgv4 gap4 m-flex-col m-gap0">
+                                <img src="image/icon-size.svg m-hide" alt="">
+                                <p class="p_main text-bold m_tac">
+                                    Размер ванны:
+                                </p>
+                                <div class="dush stretch_self dush_bot m-hide" style="height: 14px;"></div>
+                                <p class="p_main m_tac">
+                                    1,5 м
+                                </p>
+                            </div>
+                        <div class="flex-row flex-align_sb mgv16">
+                            <button class="btn_fill">
+                                Купить
+                            </button>
+                            <p class="link_big">120руб</p>
                         </div>
+                        <div class="mgv24"></div>
                     </div>
-                    <!-- END_CART -->
+                </div>
+                <!-- END_CART -->
                 </div>
                 <div class="flex-col width350">
                     <h3 class="">
