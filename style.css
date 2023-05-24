@@ -260,6 +260,9 @@ h4{
 }
 
 
+.mgv-8{
+    margin-top: -8px;
+}
 .mgv2{
     margin-top: 2px;
 }
@@ -314,6 +317,12 @@ h4{
 }
 .mgh20{
     margin-left: 20px;
+}
+.mgh24{
+    margin-left: 24px;
+}
+.mgh32{
+    margin-left: 32px;
 }
 .mgh200{
     margin-left: 200px;
