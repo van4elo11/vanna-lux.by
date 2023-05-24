@@ -325,6 +325,17 @@ h4{
 .lr12{
     padding: 0px 12px;
 }
+.lr24{
+    padding: 0px 24px;
+}
+.lr32{
+    padding: 0px 32px;
+}
+
+.pad_bot_24{
+    padding-bottom: 32px;
+}
+
 .padding20{
     padding: 20px;
 }
@@ -406,6 +417,12 @@ h4{
 }
 .self-start{
     align-self: start;
+}
+.self-center{
+    align-self: center;
+}
+.self-bot{
+    align-self: flex-end;
 }
 .self-strech{
     align-self: stretch;
@@ -709,6 +726,20 @@ header{
     background: #FFFFFF;
     box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.08), 0px 10px 11px 6px rgba(0, 0, 0, 0.08);
     border-radius: 24px;
+}
+.process_img{
+    width: 265px;
+    padding: 10px 10px 16px 10px;
+    background: #FFFFFF;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+}
+.process_video{
+    width: 430px;
+    padding: 10px 10px 16px 10px;
+    background: #FFFFFF;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
 }
 .vacancy-list{
     border-width: 1px 0px;
