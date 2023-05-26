@@ -14,7 +14,7 @@
 </head>
 <body>
 
-    <header class="shadow_main bg_color-white">
+    <!-- <header class="shadow_main bg_color-white">
         <div class="flex-row flex-center flex-align_c gap8 m-flex-between">
             
             <div class="burger-icon m-vis">
@@ -105,17 +105,80 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> -->
+
+    <style>
+
+.testimonial-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  color: white;
+  text-align: center;
+  display: none;
+}
+
+.testimonial h2 {
+  padding-top: 120px;
+}
+
+.red {
+  background-color: red;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.blue {
+  background-color: blue;
+}
+
+@media (min-width: 1024px) {
+  .testimonial-container {
+    flex-wrap: nowrap;
+  }
+
+  .testimonial {
+    display: block;
+  }
+}
+
+</style>
+        <div class="testimonial-container">
+            <div class="testimonial red">
+            <h2>Отзыв на ванну</h2>
+            </div>
+            <div class="testimonial purple">
+            <h2>Отзыв на раковину</h2>
+            </div>
+            <div class="testimonial blue">
+            <h2>Отзыв на душ</h2>
+            </div>
+        </div>
+        
+        <button class="prev"><img src="image/arrow_l.svg" alt=""></button>
+        <button class="next"><img src="image/arrow_r.svg" alt=""></button>
+      
 
 
 
-        <div class="bgred" style="height: 2000px;"></div>
+
+
+        <!-- END_CLIENT_REVIEW
+        <div class="bgred" style="mgv128 height: 2000px;"></div> -->
 
 
 
 
 
-        <footer class="flex-col width100 flex-align_c footer_m_w">
+        <!-- <footer class="flex-col width100 flex-align_c footer_m_w">
             <div class="flex-row footer m-flex-col flex-align_sb flex-align_c m-gap24">
                 <div class="flex-col width315 m-flex-c">
                     <img src="image/footer_logo.svg" alt="">
@@ -142,6 +205,6 @@
                 </div>
             </div>
             <p class="p_discription color-white">разработка <i><a href="#" class="color-white">by to-to-to</a></i></p>
-        </footer>
+        </footer> -->
 </body>
 </html>

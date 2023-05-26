@@ -8,6 +8,9 @@
     font-family: 'Lato', sans-serif;
     /* overflow-x: hidden; */
 }
+body{
+    overflow: hidden;
+}
 a{
     text-decoration: none;
     cursor: pointer;
@@ -639,7 +642,18 @@ header{
 .cart_price_acril_bg>img{
     position: absolute; left: 0px; bottom: 0px;
 }
+.cart_price_vkladish_bg{
+    width: calc(100% - 64px);
+    overflow: hidden;
+    background: #FFFFFF;
+    box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.08), 0px 10px 11px 6px rgba(0, 0, 0, 0.08);
+    border-radius: 24px;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 28px 32px 34px 32px;
+}
 .price_class{
+    gap: 32px;
     align-items: center;
     width: calc(100% - 88px);
     background: #FFFFFF;
@@ -782,9 +796,6 @@ header{
 .m-vis{
     display: none;
 }
-.m-hide{
-    /* display: visible; */
-}
 .process-image{
     position: absolute; 
     z-index: 0; 
@@ -801,6 +812,11 @@ header{
     z-index: 1; 
     height: 400px; 
     margin-top: -50px;
+}
+.material-standart{
+    width: 1160px; 
+    align-self: flex-start; margin-left: 32px; 
+    margin-top: -500px;
 }
 footer{
     width: 1160px;
@@ -896,6 +912,12 @@ footer{
     .m-padding0{
         padding: 0px;
     }
+    .m-padding8{
+        padding: 0px 8px;
+    }
+    .m-padding12{
+        padding: 0px 12px;
+    }
     .m-padding16{
         padding: 0px 16px;
     }
@@ -907,6 +929,9 @@ footer{
     }
     .m-width160{
         width: 160px;
+    }
+    .m-width320{
+        width: 320px;
     }
     
     .m-mgv-8{
@@ -955,10 +980,16 @@ footer{
         margin-top: 250px;
     }
 
+    .m-mgv-16{
+        margin-top: -16px;
+    }
     .m-mgv-94{
         margin-top: -94px;
     }
     
+    .m-mgh0{
+        margin-left: 0px;
+    }
     .m-mgh2{
         margin-left: 2px;
     }
@@ -1075,6 +1106,7 @@ footer{
         width: 250%;
         left: 70%;
         top: 220px;
+        overflow: hidden;
     }
     .process-line-container{
         margin: 128px 0px 0px;
@@ -1142,12 +1174,34 @@ footer{
     .cart_price_emal_bg{
         padding: 24px 8px 32px 8px;
     }
+    .cart_price_vkladish_bg{
+        padding: 24px 12px 32px;
+    }
     .cart_price_acril_bg>img{
-        position: ;
         transform: scale(.5) translate(-50%, -50%);
     }
     .cart_price_acril_bg{
         padding: 0px 24px 32px;
+    }
+    .material-standart{
+        width: 100%;
+        margin: -120px 0px 0px 0px;
+        z-index: 1;
+
+    }
+    .standart-vector{
+        z-index: 0;
+        transform: translate(0%, 100%) scale(1, 5);
+        margin-top: 120px;
+    }
+    .answer{
+        width: 100%;
+    }
+    .process-image_container{
+        background-color: red;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
     }
 
 

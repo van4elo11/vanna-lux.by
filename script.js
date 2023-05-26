@@ -52,3 +52,83 @@ $(document).ready(function() {
   $('.nav_container').toggleClass('menu-active');
 });
 });
+
+
+
+
+
+$(document).ready(function() {
+  var slideIndex = 0;
+  var slides = $('.slide');
+  
+  // Показать первый слайд
+  $(slides[slideIndex]).show();
+  
+  // Обработчик клика на кнопку "Следующий слайд"
+  $('.next').click(function() {
+    // Скрыть текущий слайд
+    $(slides[slideIndex]).hide();
+    
+    // Увеличить индекс слайда
+    slideIndex++;
+    
+    // Если достигнут конец слайдов, перейти к первому слайду
+    if (slideIndex >= slides.length) {
+      slideIndex = 0;
+    }
+    
+    // Показать следующий слайд
+    $(slides[slideIndex]).show();
+  });
+  
+  // Обработчик клика на кнопку "Предыдущий слайд"
+  $('.prev').click(function() {
+    // Скрыть текущий слайд
+    $(slides[slideIndex]).hide();
+    
+    // Уменьшить индекс слайда
+    slideIndex--;
+    
+    // Если достигнуто начало слайдов, перейти к последнему слайду
+    if (slideIndex < 0) {
+      slideIndex = slides.length - 1;
+    }
+    
+    // Показать предыдущий слайд
+    $(slides[slideIndex]).show();
+  });
+});
+
+
+
+$(document).ready(function() {
+  var slideIndex = 0;
+  var testimonials = $('.testimonial');
+  
+ 
+  $(testimonials[slideIndex]).show();
+  
+  $('.next').click(function() {
+    $(testimonials[slideIndex]).hide();
+    
+    slideIndex++;
+    
+    if (slideIndex >= testimonials.length) {
+      slideIndex = 0;
+    }
+    
+    $(testimonials[slideIndex]).show();
+  });
+  
+  $('.prev').click(function() {
+    $(testimonials[slideIndex]).hide();
+    
+    slideIndex--;
+    
+    if (slideIndex < 0) {
+      slideIndex = testimonials.length - 1;
+    }
+    
+    $(testimonials[slideIndex]).show();
+  });
+});
