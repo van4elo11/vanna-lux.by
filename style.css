@@ -217,6 +217,9 @@ h4{
     height: 15px;
     border-bottom: 1px dashed #D9D9D9;
 }
+.border_main{
+    border: 1px solid rgba(93, 95, 105, 0.3);
+}
 .dush_bot{
     border-bottom: 1px dashed #000000;
 }
@@ -232,6 +235,7 @@ h4{
 .relative{
     position: relative;
 }
+
 
 
 /* MARGIN */
@@ -373,6 +377,9 @@ h4{
 .width100{
     width: 100%;
 }
+.width200{
+    width: 200px;
+}
 .width295{
     width: 295px;
 }
@@ -422,6 +429,9 @@ h4{
 .flex-align_sb{
     align-items: space-between;
     justify-content: space-between;
+}
+.flex-align_sa{
+    justify-content: space-around;
 }
 
 .stretch_self{
@@ -592,7 +602,7 @@ header{
 .contact_btn{
     padding: 10px 12px;
     border-radius: 8px;
-    height: 40px;
+    height: 42px;
     overflow: hidden;
     transition: height 0.2s ease-in-out;
 }
