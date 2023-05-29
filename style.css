@@ -137,6 +137,12 @@ h4{
 /* font */
 
 
+.z1{
+    z-index: 1;
+}
+.z0{
+    z-index: 0;
+}
 
 
 
@@ -218,7 +224,7 @@ h4{
     border-bottom: 1px dashed #D9D9D9;
 }
 .border_main{
-    border: 1px solid rgba(93, 95, 105, 0.3);
+    border: 1px solid #BFBFC2;
 }
 .dush_bot{
     border-bottom: 1px dashed #000000;
@@ -617,7 +623,7 @@ header{
     background: url(icon_brush4.png), #FFFFFF;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
-    border: 1px solid #E8E8E8;
+    
 }
 .cart_method_bg{
     padding: 0px 12px 16px 12px;
@@ -669,6 +675,10 @@ header{
     background: #FFFFFF;
     box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.08), 0px 10px 11px 6px rgba(0, 0, 0, 0.08);
     border-radius: 0px 0px 24px 24px;
+}
+.acril_econom{
+    position: absolute;
+    width: 100%;
 }
 .review{
     background: #FFFFFF;
@@ -1212,6 +1222,9 @@ footer{
         width: 150px;
         height: 150px;
         overflow: hidden;
+    }
+    .acril_econom{
+        transform: scale(1,1.5);
     }
 
 
