@@ -1,4 +1,11 @@
 $(document).ready(function() {
+  $('.hed-mob').click(function() {
+    $('.mobile-contact').toggleClass('mobile-contact-vis');
+  });
+});
+
+
+$(document).ready(function() {
     var $header = $('header');
     var prevScrollpos = window.pageYOffset;
     
@@ -132,3 +139,7 @@ $(document).ready(function() {
     $(testimonials[slideIndex]).show();
   });
 });
+
+
+
+

@@ -13,8 +13,8 @@
     <title>vanna-lux.by</title>
 </head>
 <body>
-    <header class="shadow_main bg_color-white">
-        <div class="flex-row flex-center flex-align_c gap8 m-flex-between">
+    <header class="flex-col shadow_main bg_color-white m-flex-col m-flex-c">
+        <div class="flex-row flex-center flex-align_c gap8  m-flex-row-rew m-flex-between m-width100-16">
             
             <div class="burger-icon m-vis">
                 <img src="image/BURGER_open.svg" alt="">
@@ -23,7 +23,7 @@
             <a href="#" class="pointer">
                 <img src="image/logo_container.svg" alt="" class="pointer">
             </a>
-            <ul class="flex-row flex-align_c gap4 nav_container">
+            <ul class="flex-row flex-align_c gap4 nav_container m-lr12">
                 <li>
                     <a href="#" class="btn_text">Услуги</a>
                 </li>
@@ -50,23 +50,20 @@
                 </li>
                 <li class="m-vis" style="flex-grow: 1;"></li>
                 <li class="m-vis">
-                    <div class="flex-row flex-align_c">
-                        <img src="image/icon-mtc.svg" class="border8 shadow_icon pointer" alt="">
+                    <div class="flex-row flex-align_c gap4">
+                        <img src="image/mtc_original.png" class="shadow_icon pointer" alt="">
                         <p class="text-num color-link">+375(29) 540-45-25</p>
                     </div>
                 </li>
-                <li class="m-vis">
-                    <div class="flex-row flex-align_c mgv8">
-                        <img src="image/icon-a1.svg" class="border8 shadow_icon pointer" alt="">
+                <li class="m-vis mgv12">
+                    <div class="flex-row flex-align_c gap4">
+                        <img src="image/a1_original.png" class="border8 shadow_icon pointer" alt="">
                         <p class="text-num color-link">+375(29) 670-45-25</p>
                     </div>
                 </li>
                 <li class="m-vis" style="flex-grow: 1;"></li>
             </ul>
 
-            <div class="burger-icon-contact m-vis">
-                <img src="image/BURGER_open.svg" alt="">
-            </div>
             <div class="contact_container none">
                 <div class="flex-col contact_btn shadow_icon bg_color-white">
 
@@ -124,14 +121,69 @@
                 </div>
             </div>
         </div>
+        
+        <div class="flex-col m-vis m-lr12 contact-header">
+            
+            <!-- HEADER_MOB_CONTACT -->
+            <div id="hed-mob" class="flex-row m-space-evenly mgv8">
+                <div class="flex-row m-gap4">
+                    <img src="image/a1_original.png" alt="">
+                    <a href="tel:+375(29) 670-45-25">
+                        <p class="p_main color-link text-sbold max-content">
+                            +375(29) 670-45-25
+                        </p>
+                    </a>
+                </div>
+                <div class="flex-row m-gap4">
+                    <img src="image/mtc_original.png" alt="">
+                    <a href="tel:+375(29) 540-45-25">
+                        <p class="p_main color-link text-sbold max-content">
+                            +375(29) 540-45-25
+                        </p>
+                    </a>
+                </div>
+                <div class="hed-mob">
+                    <img src="image/icon-drop_down.svg" alt="">
+                </div>
+            </div>
+            <!-- END___HEADER_MOB_CONTACT -->
+
+            <div class="mobile-contact">
+                <p class="p_main m-width100 m_tac mgv16">
+                    ежедневно с 8.00 до 22.00
+                </p>
+                <p class="p_main m-width100 m_tac mgv16">
+                    Напишите нам в мессенджеры
+                </p>
+                <div class="flex-row mgv4 m-space-evenly">
+                    <img src="image/viber.svg" alt="">
+                    <img src="image/telega.png" alt="">
+                    <img src="image/whatsapp.svg" alt="">
+                </div>
+                <div class="flex-row flex-align_c gap2 mgv12">
+                    <div class="line solid_border stretch_self"></div>
+                    <p class="p_discription color-dark_sec">Или</p>
+                    <div class="line solid_border stretch_self"></div>
+                </div>
+                <form id="contact-form" class="flex-col mgv16">
+                    <label for="message" class="m-width100 tac">Введите свой номер телефона и мы свяжемся с вами</label>
+                    <input type="text" class="p_main mgv8" id="message" name="message" placeholder="+375" autocomplete="off" required>
+                    <button type="submit" class="btn_fill p_main mgv12">
+                        Перезвоните мне
+                    </button>
+                </form>
+            </div>
+            
+        </div>
+
     </header>
 
 
     <div class="container_main flex-col flex-align_c ">
 
         <!-- MAIN_SCREEN -->
-        <div class="flex-row flex-align_c mgv94 m-flex-col self-start">
-            <div class="flex-col offer">
+        <div class="flex-row flex-align_c mgv94 m-flex-col-rev self-start">
+            <div class="flex-col offer z1">
                 <h1>
                     Полная <span class="color-link">реставрация</span> вашей старой <span class="color-link">ванны!</span>
                 </h1>
@@ -170,7 +222,7 @@
                 </div>
                 <button class="btn_fill link_big self-start btn_big mgv32">Восстановить ванну</button>
             </div>
-            <img src="image/Main image.jpg" class="m-width100" alt="">
+            <img src="image/Main image.jpg" class="m-width100 m-semen z0" alt="">
         </div>
         <!-- MAIN_SCREEN -->
         
@@ -701,7 +753,7 @@
         </div>
 
         <!-- PRICE_ACRIL -->
-        <div class="flex-row cart_price_acril_bg mgv48 relative">
+        <div class="flex-row cart_price_acril_bg mgv48 relative z2">
             <img src="image/acril_pic.png" alt="">
             <div class="flex-col width450 m-mgv250">
                 <h3 class="">
@@ -724,7 +776,7 @@
         <!-- PRICE_ACRIL_ECONOM -->
         <div class="flex-col price_class m-width320 m-mgv-16 relative z1">
             <div class="flex-row gap24 flex-align_c  mgv32 m-flex-col-rev relative">
-                <div class="flex-row gap20 m-gap8 m-padding8 z1">
+                <div class="flex-row gap20 m-gap8 m-lr12 z1">
                     <!-- CART -->
                     <div class="flex-col cart_material border_main">
                     <p class="p_main tac mgv8">
@@ -833,10 +885,10 @@
                     <!-- END_CART -->
                 </div>
                 <div class="flex-col width350 m-width100 m-mgv24 gap12 z1">
-                    <h3 class="m-lr12">
+                    <h3 class="m-lr12 color-white">
                         Материалы Эконом класса
                     </h3>
-                    <p class="p_main m-lr12">
+                    <p class="p_main m-lr12 color-white">
                         Отличительные особенности эконом класса: Тонкий слой покрытия, желтеют со временем (через 1-2 года), присутствуют разбавители (ксилол, ацетон или нонилфенол) и поэтому имеют резкий запах, реальный срок службы до 7 лет.
                     </p>
                 </div>
@@ -876,7 +928,7 @@
                         Но тем не менее приобретают различные оттенки желтого (через 2-3 года), присутствуют разбавители (ксилол, ацетон или нонилфенол), имеют резкий запах, реальный срок службы до 10 лет. 
                     </p>
                 </div>
-                <div class="flex-row gap20 m-flex-row m-gap8">
+                <div class="flex-row gap20 m-flex-row m-gap8 m-lr12">
                 <!-- CART -->
                     <div class="flex-col cart_material border_main">
                         <p class="p_main tac mgv8">
@@ -1042,8 +1094,10 @@
             <div class="mgv32" style="opacity: 0.3; border: 1px dashed #5D5F69; width: 90%;
             "></div>
 
-            <div class="flex-row mgv32 gap32 flex-align_c m-flex-col m-width100">
-                <div class="flex-row gap20">
+                <img src="image/vector_price.svg" class="acril_premium z0" height="" alt="">
+
+            <div class="flex-row mgv32 gap32 flex-align_c m-flex-col-rev m-width100 z1">
+                <div class="flex-row gap20 m-gap8 m-lr12">
                     <!-- CART -->
                     <div class="flex-col cart_material border_main">
                     <p class="p_main tac mgv8">
@@ -1098,7 +1152,9 @@
                     </div>
                     <!-- END_CART -->
                     <!-- CART -->
-                    <div class="flex-col cart_material border_main">
+                    <div class="flex-col cart_material border_main relative">
+                    <img src="image/premium_best.svg" class="best-premium" alt="">
+                    <img src="image/formula_best.svg" alt="" class="best-formula">
                     <p class="p_main tac mgv8">
                         Эмалировка №1
                     </p>
@@ -1152,34 +1208,34 @@
                     <!-- END_CART -->
                 </div>
                     <div class="flex-col width450 m-width100">
-                        <h3 class="lr12">
+                        <h3 class="lr12 color-white">
                             Материалы Премиум класса
                         </h3>
-                        <p class="p_main mgv12 lr12">
+                        <p class="p_main mgv12 lr12 color-white">
                             Отличительные особенности Премиум класса:
                         </p>
                         <ul class="mgv8">
-                            <li class="list mgv4 lr12">
+                            <li class="list mgv4 lr12 color-white">
                                 Абсолютно без запаха;
                             </li>
-                            <li class="list mgv4 lr12">
+                            <li class="list mgv4 lr12 color-white">
                                 Не содержат вредных для здоровья    компонентов, запрещенных в Евросоюзе;
 
                             </li>
-                            <li class="list mgv4 lr12">
+                            <li class="list mgv4 lr12 color-white">
                                 Не желтеют в течении всего срока    эксплуатации ванны;
                             </li>
-                            <li class="list mgv4 lr12">
+                            <li class="list mgv4 lr12 color-white">
                                 Устойчивы к разрушению материала,   появлению трещин и отслоений;
                             </li>
-                            <li class="list mgv4 lr12">
+                            <li class="list mgv4 lr12 color-white">
                                 Высочайшая степень белизны и глянца;
                             </li>
                         </ul>
-                        <p class="p_main mgv12 lr12">
+                        <p class="p_main mgv12 lr12 color-white">
                             Сильнейшая степень прилипания(адгезии) к    старой ванне обеспечивается еще, и благодаря   использованию специального средства для   подготовки ванны! Сертифицированны в Беларуси!
                         </p>
-                        <p class="p_main lr12">
+                        <p class="p_main lr12 color-white">
                             Рецептура испытанна в Евросоюзе, США, Канаде,   Австралии и в Южной Африке!
                         </p>
                     </div>
@@ -1307,7 +1363,7 @@
         <!-- END_PRICE_CHECK -->
         
         <!-- METHOD_VKLADYSH -->
-        <div class="flex-row flex-align_c gap24 mgv94 m-flex-col cart_price_vkladish_bg">
+        <div class="flex-row flex-align_c gap24 mgv94 m-flex-col cart_price_vkladish_bg m-width100">
             <img src="image/bath_semen-method-acril 1.png" class="m-hide" width="440px" alt="">
             <div class="flex-col width450 m-width100">
                 <h3 class="">

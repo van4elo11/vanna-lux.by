@@ -137,11 +137,14 @@ h4{
 /* font */
 
 
+.z0{
+    z-index: 0;
+}
 .z1{
     z-index: 1;
 }
-.z0{
-    z-index: 0;
+.z2{
+    z-index: 2;
 }
 
 
@@ -680,6 +683,12 @@ header{
     position: absolute;
     width: 100%;
 }
+.acril_premium{
+    position: absolute;
+    width: 100%;
+    bottom: 75px;
+    transform: scale(1,1.1);
+}
 .review{
     background: #FFFFFF;
     box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.08), 0px 10px 11px 6px rgba(0, 0, 0, 0.08);
@@ -842,6 +851,18 @@ footer{
     width: 1160px;
     background: linear-gradient(267.51deg, #538FFF -37.99%, #40A1E8 146.73%);
 }
+.best-formula{
+    position: absolute;
+    right: -35px;
+    top: 160px;
+    transform: rotate(10deg);
+}
+.best-premium{
+    position: absolute;
+    right: -72px;
+    top: -32px;
+    transform: rotate(15deg);
+}
 
 @media (max-width: 1024px) {
     /* FONT */
@@ -879,9 +900,15 @@ footer{
     .m-flex-row{
         flex-direction: row;
     }
+    .m-flex-row-rew{
+        flex-direction: row-reverse;
+    }
     .m-flex-between{
         padding: 0px 16px;
         justify-content: space-between;
+    }
+    .m-space-evenly{
+        justify-content: space-evenly;
     }
     .m-self-start{
         align-self: flex-start;
@@ -897,6 +924,11 @@ footer{
     }
     .m-justify_c{
         justify-content: center
+    }
+    .m-semen{
+        margin-top: 20px;
+        margin-left: 110px;
+        transform: translate(0%,8%) scale(1.65)
     }
     /* MARGIn */
     .mgh_col{
@@ -946,6 +978,9 @@ footer{
     }
     .m-width100{
         width: 100%;
+    }
+    .m-width100-16{
+        width: calc(100% - 32px);
     }
     .m-width160{
         width: 160px;
@@ -1066,6 +1101,7 @@ footer{
     .m-width_strech{
         width: 100%;
     }
+
     .vacancy-siz_h{
         width: 100%;
     }
@@ -1096,7 +1132,7 @@ footer{
         position: fixed;
         flex-direction: column;
         align-items: start;
-        top: 86px;
+        top: 115px;
         left: 0px;
         width: 100%;
         min-height: calc(100vh - 86px);
@@ -1216,6 +1252,10 @@ footer{
     }
     .answer{
         width: 100%;
+        display: none;
+    }
+    .answer_visible{
+        display: block;
     }
     .process-image_container{
         background-color: red;
@@ -1224,9 +1264,27 @@ footer{
         overflow: hidden;
     }
     .acril_econom{
-        transform: scale(1,1.5);
+        transform: translate(0%,50%) scale(1,1.75);
+    }
+    .acril_premium{
+        position: absolute;
+        width: 100%;
+        bottom: 610px;
+        transform: translate(0%,-100%) scale(1,4.5);
+    }
+    .mobile-contact{
+        height: 0px;
+        overflow: hidden;
+    }
+    .mobile-contact-vis{
+        height: 295px;
     }
 
 
 
+
   }
+.max-content{
+    width: max-content;
+
+}
