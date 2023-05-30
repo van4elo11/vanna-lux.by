@@ -93,10 +93,10 @@ $(document).ready(function() {
     // Скрыть текущий слайд
     $(slides[slideIndex]).hide();
     
-    // Уменьшить индекс слайда
+    // индекс минус
     slideIndex--;
     
-    // Если достигнуто начало слайдов, перейти к последнему слайду
+    // сброс к первому
     if (slideIndex < 0) {
       slideIndex = slides.length - 1;
     }
@@ -142,4 +142,77 @@ $(document).ready(function() {
 
 
 
+$(document).ready(function() {
+  $('.open-popup').click(function() {
+    $('.popup-wrapper').fadeIn();
+  });
 
+  $('#close-popup').click(function() {
+    $('.popup-wrapper').fadeOut();
+  });
+
+  $('.popup-wrapper').click(function(event) {
+    if ($(event.target).closest('.popup-container').length === 0 && $(event.target).attr('id') !== 'open-popup') {
+      $('.popup-wrapper').fadeOut();
+    }
+  });
+});
+
+
+// СКРОЛЫ
+
+$(document).ready(function() {
+  $('#anc-emal').click(function() {
+    $('html, body').animate({
+      scrollTop: $('#tgt-emal').offset().top
+    }, 200);
+  });
+});
+
+$(document).ready(function() {
+  $('#anc-acril').click(function() {
+    $('html, body').animate({
+      scrollTop: $('#tgt-acril').offset().top
+    }, 200);
+  });
+});
+
+$(document).ready(function() {
+  $('#anc-vkladish').click(function() {
+    $('html, body').animate({
+      scrollTop: $('#tgt-vkladish').offset().top
+    }, 200);
+  });
+});
+
+$(document).ready(function() {
+  $('#anc-uslugi').click(function() {
+    $('html, body').animate({
+      scrollTop: $('#tgt-uslugi').offset().top
+    }, 200);
+  });
+});
+
+$(document).ready(function() {
+  $('#anc-proces').click(function() {
+    $('html, body').animate({
+      scrollTop: $('#tgt-proces').offset().top
+    }, 200);
+  });
+});
+
+$(document).ready(function() {
+  $('#anc-case').click(function() {
+    $('html, body').animate({
+      scrollTop: $('#tgt-case').offset().top
+    }, 200);
+  });
+});
+
+$(document).ready(function() {
+  $('#anc-review').click(function() {
+    $('html, body').animate({
+      scrollTop: $('#tgt-review').offset().top
+    }, 200);
+  });
+});

@@ -25,16 +25,24 @@
             </a>
             <ul class="flex-row flex-align_c gap4 nav_container m-lr12">
                 <li>
-                    <a href="#" class="btn_text">Услуги</a>
+                    <a href="#" id="anc-uslugi" class="btn_text">
+                        Услуги
+                    </a>
                 </li>
                 <li>
-                    <a href="#" class="btn_text">Процесс</a>
+                    <a href="#" id="anc-proces" class="btn_text">
+                        Процесс
+                    </a>
                 </li>
                 <li>
-                    <a href="#" class="btn_text">Наши работы</a>
+                    <a href="#" id="anc-case" class="btn_text">
+                        Наши работы
+                    </a>
                 </li>
                 <li>
-                    <a href="#" class="btn_text">Отзывы</a>
+                    <a href="#tgt-review" id="anc-review" class="btn_text">
+                        Отзывы
+                    </a>
                 </li>
                 <!-- <li>
                     <a href="#" class="btn_text">Сертификаты</a>
@@ -178,6 +186,38 @@
 
     </header>
 
+    <!-- POP_UP -->
+    <div class="popup-wrapper">
+        <div class="popup-container">
+            <div class="flex-row width100 flex-align_s flex-align_sb">
+                <img src="image/bath-popup.svg" alt="">
+                <button id="close-popup">
+                    <img src="image/close-popup.svg" alt="">
+                </button>
+            </div>
+            <h3 class="">
+                Оставить заявку
+            </h3>
+            <p class="p_main mgv12">
+                Оставьте нам ваши контакты и мы свяжемся с вами через 5 минут
+            </p>
+            <form action="" class="mgv16 width100 flex-col">
+                
+                <label for="" class="label-text mgv12">ВАШЕ ИМЯ</label>
+                <input class="mgv8" type="text" id="full-name" placeholder="Введите ваше ФИО" name="full-name" required>
+
+                <label for="city" class="label-text mgv12">Ваш город</label>
+                <input class="mgv8" type="text" id="city" placeholder="Ваш город" name="city" required>
+
+                <label for="contact" class="label-text mgv12">Контакт для связи</label>
+                <input class="mgv8" type="text" id="contact-info" placeholder="+375" name="contact-info" required>
+
+                <button type="submit" class="btn_fill self-start mgv16 p_main">Отправить</button>
+
+            </form>
+        </div>
+    </div>
+    <!-- END_POP_UP -->
 
     <div class="container_main flex-col flex-align_c ">
 
@@ -220,7 +260,7 @@
                             </div>
                         </div>
                 </div>
-                <button class="btn_fill link_big self-start btn_big mgv32">Восстановить ванну</button>
+                <button id="" class="open-popup btn_fill link_big self-start btn_big mgv32">Восстановить ванну</button>
             </div>
             <img src="image/Main image.jpg" class="m-width100 m-semen z0" alt="">
         </div>
@@ -229,7 +269,7 @@
         
 
         <!-- METHOD -->
-        <h2 class="tac mgv128">Способы реставрации</h2>
+        <h2 id="tgt-uslugi" class="tac mgv128">Способы реставрации</h2>
         <div class="flex-row flex-center gap24 wrap">
             
             <div class="border_main flex-col flex-align_s cart_method mgv24 stretch_self">
@@ -262,7 +302,7 @@
                         <div class="dush  stretch_self dush_bot" style="height: 16px;"></div>
                         <p class="text-num">от 150 руб</p>
                     </div>
-                    <button class="btn_fill mgv12" style="width: fit-content;">Выбрать материал</button>
+                    <button id="anc-emal" class="btn_fill mgv12" style="width: fit-content;">Выбрать материал</button>
                 </div>
             </div>
 
@@ -304,11 +344,11 @@
                         <img src="image/icon-money.svg" alt="">
                         <p class="p_big">Стоимость:</p>
                         <div class="dush  stretch_self dush_bot" style="height: 16px;"></div>
-                        <p class="text-num">
+                        <p id="tgt-proces" class="text-num">
                             от 180 руб
                         </p>
                     </div>
-                    <button class="btn_fill mgv12" style="width: fit-content;">Выбрать материал</button>
+                    <button id="anc-acril" class="btn_fill mgv12" style="width: fit-content;">Выбрать материал</button>
                 </div>
             </div>
 
@@ -354,7 +394,7 @@
                             от 400 руб
                         </p>
                     </div>
-                    <button class="btn_fill mgv12" style="width: fit-content;">Выбрать материал</button>
+                    <button id="anc-vkladish" class="btn_fill mgv12" style="width: fit-content;">Выбрать материал</button>
                 </div>
             </div>
 
@@ -472,7 +512,7 @@
 
         <!-- CASE -->
         <div class="flex-col flex-align_c case_block mgv128 m-width100">
-            <h2 class="mgv48">Наши работы</h2>
+            <h2 id="tgt-case" class="mgv48">Наши работы</h2>
             <div class="slider-container m-width100">
                 <div class="slider-element flex-col flex-align_c">
                     <div class="flex-row gap32 mgv48">
@@ -519,7 +559,7 @@
         <!-- REVIEW -->
         <h2 class="mgv128">Отзывы</h2>
         <h3 class="mgv16 m_tac">Что о нас говорят клиенты?</h3>
-        <div class="flex-row gap24 m-width100">
+        <div id="tgt-review" class="flex-row gap24 m-width100">
             <div class="flex-col gap4 padding10 bg_color-white shadow_main border20 flex-start">
                 <div class="video-container border16 clip">
                     <img class="video-play shadow_icon" src="image/icon-play.svg" alt="">
@@ -596,19 +636,23 @@
             </div>
 
         </div>
-        <div class="flex-row flex-align_c m-gap24 m-flex-end">
-            <img src="image/arrow_l.svg" alt="" class="shadow_icon border8 m-vis">
+        <div class="flex-row flex-align_c m-gap24 m-flex-end review-text-container">
+            <button id="review-text-l">
+                <img src="image/arrow_l.svg" alt="" class="shadow_icon border8 m-vis">
+            </button>
             <button class="btn_elevant btn_icon mgv24">
-                <img src="image/icon_add.svg" alt="">
+                <img id="tgt-price" src="image/icon_add.svg" alt="">
                 Оставить отзыв
             </button>
-            <img src="image/arrow_r.svg" alt="" class="shadow_icon border8 m-vis">
+            <button id="review-text-r">
+                <img src="image/arrow_r.svg" alt="" class="shadow_icon border8 m-vis">
+            </button>
         </div>
         <!-- END_CLIENT_REVIEW -->
         <!-- END_REVIEW -->
 
         <!-- PRICE -->
-        <h2 class="mgv128">
+        <h2 class="mgv128"  id="tgt-emal">
             Наши цены
         </h2>
         <!-- PRICE_EMAL  -->
@@ -635,7 +679,7 @@
                     <img src="image/company_BYK.svg" alt="">
                     <img src="image/company_Tikkurila.svg" alt="">
                 </div>
-                <div class="p_main mgv12">
+                <div id="tgt-acril" class="p_main mgv12">
                     Срок службы: 3-5 лет.
                 </div>
             </div>
@@ -685,7 +729,7 @@
                                 </p>
                             </div>
                         <div class="flex-row flex-align_sb mgv16">
-                            <button class="btn_fill">
+                            <button class="open-popup btn_fill">
                                 Купить
                             </button>
                             <p class="link_big">150руб</p>
@@ -738,7 +782,7 @@
                                 </p>
                             </div>
                         <div class="flex-row flex-align_sb mgv16">
-                            <button class="btn_fill">
+                            <button class="open-popup btn_fill">
                                 Купить
                             </button>
                             <p class="link_big">120руб</p>
@@ -751,6 +795,7 @@
             </div>
             <img src="image/emal_pic.png" height="100%" alt="" style="position: absolute; left: 450px; bottom: -175px; z-index: 1;">
         </div>
+        
 
         <!-- PRICE_ACRIL -->
         <div class="flex-row cart_price_acril_bg mgv48 relative z2">
@@ -821,7 +866,7 @@
                                 </p>
                             </div>
                         <div class="flex-row flex-align_sb mgv16">
-                            <button class="btn_fill">
+                            <button class="btn_fill open-popup">
                                 Купить
                             </button>
                             <p class="link_big">180руб</p>
@@ -874,7 +919,7 @@
                                 </p>
                             </div>
                         <div class="flex-row flex-align_sb mgv16">
-                            <button class="btn_fill">
+                            <button class="open-popup btn_fill">
                                 Купить
                             </button>
                             <p class="link_big">200руб</p>
@@ -929,7 +974,7 @@
                     </p>
                 </div>
                 <div class="flex-row gap20 m-flex-row m-gap8 m-lr12">
-                <!-- CART -->
+                    <!-- CART -->
                     <div class="flex-col cart_material border_main">
                         <p class="p_main tac mgv8">
                             Стандарт №1
@@ -973,7 +1018,7 @@
                                     </p>
                                 </div>
                             <div class="flex-row flex-align_sb mgv16">
-                                <button class="btn_fill">
+                                <button class="open-popup btn_fill">
                                     Купить
                                 </button>
                                 <p class="link_big">220руб</p>
@@ -1026,7 +1071,7 @@
                                         </p>
                                     </div>
                                 <div class="flex-row flex-align_sb mgv16">
-                                    <button class="btn_fill">
+                                    <button class="open-popup btn_fill">
                                         Купить
                                     </button>
                                     <p class="link_big">180руб</p>
@@ -1080,7 +1125,7 @@
                                 </p>
                             </div>
                         <div class="flex-row flex-align_sb mgv16">
-                            <button class="btn_fill">
+                            <button class="open-popup btn_fill">
                                 Купить
                             </button>
                             <p class="link_big">170руб</p>
@@ -1142,7 +1187,7 @@
                                 </p>
                             </div>
                         <div class="flex-row flex-align_sb mgv16">
-                            <button class="btn_fill">
+                            <button class="open-popup btn_fill">
                                 Купить
                             </button>
                             <p class="link_big">180руб</p>
@@ -1197,7 +1242,7 @@
                                 </p>
                             </div>
                         <div class="flex-row flex-align_sb mgv16">
-                            <button class="btn_fill">
+                            <button class="open-popup btn_fill">
                                 Купить
                             </button>
                             <p class="link_big">120руб</p>
@@ -1345,7 +1390,7 @@
                             </div>
                             <div class="flex-row gap4 mgv8 flex-align_c">
                                 <img src="image/defented-icon.svg" alt="" class="m-hide">
-                                <p class="p_main text-bold">
+                                <p id="tgt-vkladish" class="p_main text-bold">
                                     Демонтаж пластиковых сливов:
                                 </p>
                                 <div style="height: 20px; flex-grow: 1; border-bottom: 2px dashed #5D5F69; order: 0; align-self: stretch;"></div>
@@ -1440,7 +1485,7 @@
                             </p>
                         </div>
                     <div class="flex-row flex-align_sb mgv16">
-                        <button class="btn_fill">
+                        <button class="open-popup btn_fill">
                             Купить
                         </button>
                         <p class="link_big">120руб</p>
