@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -191,7 +192,7 @@
         <div class="popup-container">
             <div class="flex-row width100 flex-align_s flex-align_sb">
                 <img src="image/bath-popup.svg" alt="">
-                <button id="close-popup">
+                <button id="close-popup" class="bg_color-white">
                     <img src="image/close-popup.svg" alt="">
                 </button>
             </div>
@@ -401,6 +402,29 @@
         </div>
         <!-- METHOD -->
         
+
+
+
+                    <!-- VIDEO -->
+            <div class="popup-video">
+                <div class="popup-container">
+                    <div class="flex-row width100 flex-align_s flex-align_sb">
+                        <img src="image/bath-popup.svg" alt="">
+                        <button id="close-video" class="bg_color-white">
+                            <img src="image/close-popup.svg" alt="">
+                        </button>
+                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nU89qQP18qE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3 class="mgv12">
+                        Реставрация джакузи
+                    </h3>
+                </div>
+            </div>
+            <!-- END_VIDEO -->
+
+
+
+
         <!-- PROCESS -->
         <div class="flex-col relative m-width_strech">
             <h2 class="mgv128 width662 self-center m-width_strech m_tac" style="z-index: 1;">
@@ -476,17 +500,19 @@
                 </h4>
                 </div>
                 <div class="flex-col process_video self-bot process6">
-                <div class="relative">
-                    <img src="image/process_image_06.png" alt="">
-                    <div class="flex-col flex-center flex-align_c" style="width: 44px; height: 44px; background-image: url('image/star_bg.svg'); position: absolute; right: -12px; bottom: -12px;">
-                        <h4 class="color-white">
-                            6
-                        </h4>
+                    <div class="relative">
+                        <img id="open-video1" style="position: absolute; top: 50%;
+                        left: 50%; transform: translate(-50%, -50%);" class="video-play shadow_icon" src="image/icon-play.svg">
+                        <img src="image/process_image_06.png" alt="">
+                        <div class="flex-col flex-center flex-align_c"  style="width: 44px; height: 44px; background-image:  url('image/star_bg.svg'); position: absolute; right:     -12px; bottom: -12px;">
+                            <h4 class="color-white">
+                                6
+                            </h4>
+                        </div>
                     </div>
-                </div>
-                <h4 class="mgv4 color-dark_sec">
-                    Результат реставрации
-                </h4>
+                    <h4 class="mgv4 color-dark_sec">
+                        Результат реставрации
+                    </h4>
                 </div>
             </div>
         </div>
@@ -556,14 +582,24 @@
         </div>
         <!-- CASE -->
 
+
+
+
+
+
+
+
+
         <!-- REVIEW -->
         <h2 class="mgv128">Отзывы</h2>
         <h3 class="mgv16 m_tac">Что о нас говорят клиенты?</h3>
         <div id="tgt-review" class="flex-row gap24 m-width100">
             <div class="flex-col gap4 padding10 bg_color-white shadow_main border20 flex-start">
                 <div class="video-container border16 clip">
-                    <img class="video-play shadow_icon" src="image/icon-play.svg" alt="">
-                    <img class="video-bg" src="image/video-preview.png" alt="">
+                    <button id="video-popup1">
+                        <img class="video-play shadow_icon" src="image/icon-play.svg" alt="">
+                        <img class="video-bg" src="image/video-preview.png" alt="">
+                    </button>
                     <img class="video-bg" src="image/video_bg.png" alt="">
                 </div>
                 <h4 class="video-p color-dark_sec">Отзыв на пластол</h4>
@@ -813,8 +849,15 @@
                 <p class="p_main mgv4">
                     В состав материалов входит сырье зарубежных производителей:
                 </p>
-                <div class="flex-row">
-                    <img src="image/company_Tikkurila.svg" alt="">
+                <div class="mgv12 flex-row width100 gap8 wrap">
+                    <img src="image/company_akzonobel.svg" alt="">
+                    <img src="image/company_basf.svg" alt="">
+                    <img src="image/company_BYK.svg" alt="">
+                    <img src="image/company_dow.svg" alt="">
+                    <img src="image/company_DuPont.svg" alt="">
+                    <img src="image/company_evonik.svg" alt="">
+                    <img src="image/company_huntsman.svg" alt="">
+                    <img src="image/company_kukdo.svg" alt="">
                 </div>
             </div>
         </div>
@@ -1290,7 +1333,8 @@
         <!-- END_PRICE -->
         
         <!-- PRICE_CHECK -->
-        <div class="flex-row shadow_main mgv48 pad_bot_24">
+        <div class="flex-row shadow_main mgv48 pad_bot_24 relative">
+            <img class="shtamp" src="image/shtamp.svg" alt="">
             <div class="flex-col">
                 <!-- <img src="image/chek_trim.svg" width="100%" alt=""> -->
             </div>

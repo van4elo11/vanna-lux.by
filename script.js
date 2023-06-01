@@ -141,7 +141,7 @@ $(document).ready(function() {
 });
 
 
-
+// ФОРМА
 $(document).ready(function() {
   $('.open-popup').click(function() {
     $('.popup-wrapper').fadeIn();
@@ -157,6 +157,25 @@ $(document).ready(function() {
     }
   });
 });
+
+
+// ВИДОЕО1
+$(document).ready(function() {
+  $('#open-video1').click(function() {
+    $('.popup-video').fadeIn();
+  });
+
+  $('#close-video').click(function() {
+    $('.popup-video').fadeOut();
+  });
+
+  $('.popup-video').click(function(event) {
+    if ($(event.target).closest('.popup-container').length === 0 && $(event.target).attr('id') !== 'open-popup') {
+      $('.popup-video').fadeOut();
+    }
+  });
+});
+
 
 
 // СКРОЛЫ
