@@ -96,10 +96,7 @@ h4{
     color: #383838;
 }
 .text-num{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
+    font-size: 24px;
     line-height: 19px;
 }
 
@@ -209,6 +206,11 @@ h4{
 }
 .shadow_main{
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+}
+.shadow_constrain{
+    background: #FFFFFF;
+    box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.08), 0px 10px 11px 6px rgba(0, 0, 0, 0.08);
+    border-radius: 24px;
 }
 .border8{
     border-radius: 8px;
@@ -920,14 +922,49 @@ footer{
 }
 
 @media (max-width: 1024px) {
+
+    .btn_big{
+        padding: 16px 88px;
+    }
+    /*  h1 30px
+        h2 25px
+        h3 20px
+        h4 15px  text-transform: uppercase;
+        p  16px;
+    */
+
+
     /* FONT */
-    .popup-container{
-        width: 320px;
+    
+
+    h1{
+        font-size: 30px;
+        letter-spacing: -0.75px;
+    }
+    .h1_sec{
+        font-size: 25px;
     }
     h2{
-        font-size: 29px;
-        line-height: 130%;
-        letter-spacing: -1.50526px;
+        font-size: 25px;
+        letter-spacing: -0.75px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    .p_main{
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+
+    .popup-container{
+        width: 320px;
     }
     .p_headlin{
         font-size: 24px;
@@ -939,6 +976,15 @@ footer{
     .m_tac{
         text-align: center;
     }
+
+    .m-fsz13{
+        font-size: 13px;
+    }
+    .m-fw500{
+        font-weight: 500;
+    }
+
+
     /* FLEX */
     .m-flex-start{
         align-items: start;
@@ -967,6 +1013,9 @@ footer{
     }
     .m-space-evenly{
         justify-content: space-evenly;
+    }
+    .m-space-between{
+        justify-content: space-between;
     }
     .m-self-start{
         align-self: flex-start;
@@ -1046,6 +1095,12 @@ footer{
     .m-width320{
         width: 320px;
     }
+
+
+    .mgv128{
+        margin-top: 72px;
+    }
+
     
     .m-mgv-8{
         margin-top: -8px;
@@ -1130,6 +1185,12 @@ footer{
     .m-mgh_col{
         margin-right: 205px;
     }
+    .m-mgl12{
+        margin-left: 12px;
+    }
+    .m-mgr7{
+        margin-right: 7px;
+    }
 
     .m-lr4{
         padding: 0px 4px;
@@ -1182,8 +1243,12 @@ footer{
         width: 100%;
     }
 
+
+    header{
+        padding: 8px 0px;
+    }
     .header_s{
-        padding: 16px 0px;
+        padding: 4px 0px;
     }
     .nav_container{
         display: none;
@@ -1222,15 +1287,27 @@ footer{
         top: 220px;
         overflow: hidden;
     }
+    .process-vector{
+        position: absolute;
+        bottom: 260px;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(323deg) scale(0.5);
+    }
+    .process_video{
+        width: calc(100% - 32px);
+    }
+    .process_video>.relative>img{
+        width: 100%;
+    }
     .process-line-container{
-        margin: 128px 0px 0px;
+        margin: 32px 0px 0px;
         flex-direction: column;
         height: auto;
         width: 350px;
     }
     .process-line-container>div{
-        transform: scale(70%);
-        margin-top: -90px;
+        /* transform: scale(70%); */
+        /* margin-top: -90px; */
     }
     .process-line_two-container{
         margin: 0px 0px;   
@@ -1238,26 +1315,36 @@ footer{
         height: auto;
         width: 350px;
     }
+    .process_img {
+        width: 212px;
+    }
+    .process_img>.relative>img{
+            width: 100%;
+    }
+    .process_img>p{
+        font-size: 13px;
+        line-height: 120%;
+    }
     .process-line_two-container>div{
-        transform: scale(70%);
-        margin-top: -90px;
+        /* transform: scale(70%); */
+        /* margin-top: -90px; */
     }
     .process1{
-        margin-right: -40px;
+        /* margin-right: -40px; */
     }
     .process2{
-        margin-left: -40px;
+        /* margin-left: -40px; */
     }
     .process3{
-        margin-right: -40px;
+        /* margin-right: -40px; */
     }
     .process4{
         align-self: flex-start;
-        margin-left: -40px;
+        /* margin-left: -40px; */
     }
     .process5{
         align-self: flex-end;
-        margin-right: -40px;
+        /* margin-right: -40px; */
     }
     .process6{
         align-self: center;
@@ -1338,7 +1425,9 @@ footer{
         height: 295px;
     }
 
-
+    .btn_fill{  
+        padding: 16px;
+    }
 
 
   }
