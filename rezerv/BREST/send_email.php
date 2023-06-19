@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $message .= "Контакт: " . $contact_info . "\n";
 
     // Отправка письма
-    $to = "salesvannalux@yandex.ru";
+    $to = "sobaka.pisos2123@gmail.com";
     $subject = "Новое сообщение с формы обратной связи";
     $headers = "From: Your Website <noreply@yourwebsite.com>";
 
