@@ -129,8 +129,54 @@ $(document).ready(function() {
   });
 });
 
+//FAQ MATERIAL
+$(document).ready(function() {
+  $('.material-acril-popup-faq').click(function() {
+    if ($(this).hasClass('material-acril-popup-faq-open')) {
+      $(this).removeClass('material-acril-popup-faq-open');
+    } else {
+      $('.material-acril-popup-faq').removeClass('material-acril-popup-faq-open');
+      $(this).addClass('material-acril-popup-faq-open');
+    }
+  });
+});
 
 
+
+// POP-UP-OPEN
+$(document).ready(function() {
+  $(".more-info-acril").click(function() {
+    $(".material-acril-popup-wraper").removeClass("none");
+  });
+  
+  $("#close-material-acril").click(function() {
+    $(".material-acril-popup-wraper").addClass("none");
+  });
+});
+
+$(document).ready(function() {
+  $(".more-info-emal").click(function() {
+    $(".material-emal-popup-wraper").removeClass("none");
+  });
+  
+  $("#close-material-emal").click(function() {
+    $(".material-emal-popup-wraper").addClass("none");
+  });
+});
+
+$(document).ready(function() {
+  $(".more").click(function(e) {
+    e.preventDefault();
+    var paragraphHider = $(".paragraph-hider");
+    
+    if (paragraphHider.hasClass("h-auto")) {
+      paragraphHider.removeClass("h-auto");
+    } else {
+      $(".paragraph-hider.h-auto").removeClass("h-auto");
+      paragraphHider.addClass("h-auto");
+    }
+  });
+});
 
 
 

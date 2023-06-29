@@ -263,6 +263,11 @@ p{
     color: #FFF;
     text-decoration: underline;
 }
+.discription{
+    font-size: 12px;
+    color: #383838;
+    font-weight: 400;
+}
 
 .tac{
     text-align: center;
@@ -902,6 +907,123 @@ textarea{
 
 
 
+/* MATERIAL POP-UP */
+.material-emal-popup-wraper{
+    overflow-x: scroll;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 98;
+    width: 100vw;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.75);  
+}
+.material-acril-popup-wraper{
+    overflow-x: scroll;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 98;
+    width: 100vw;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.75);  
+}
+.material-acril-popup-container{
+    display: flex;
+    max-width: 720px;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px 32px;
+    margin: 120px auto 32px;
+    border-radius: 20px;
+    background: #FFF;
+}
+.material-acril-popup-faq{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 12px 4px;
+    height: auto;
+    overflow: hidden;
+    gap: 20px;
+}
+    .material-acril-popup-faq>div.flex-col{
+        width: 70%;
+    }
+    .material-acril-popup-faq>div.flex-row>h3{
+        flex: 1 0 0;
+    }
+    .material-acril-popup-faq-open{
+        height: auto;
+    }
+.paragraph-hider{
+    position: relative;
+    height: auto;
+    overflow: hidden;
+}
+    .paragraph-hider:active{
+        height: auto;
+    }
+.more{
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0px;
+}
+
+.preimushestva{
+    display: flex;
+    padding-right: 0px;
+    align-items: center;
+    gap: 2px;
+    border-radius: 4px;
+    padding-right: 6px;
+    color: #33B81D;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.84) 0%, rgba(255, 255, 255, 0.84) 100%), #33B81D;
+}
+
+.material-acril-cart-container{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 12px;
+}
+.material-acril-cart{
+    display: flex;
+    padding-top: 6px;
+    padding-bottom: 12px;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 0;
+    border-radius: 20px;
+    border: 1px solid rgba(93, 95, 105, 0.30);
+    background: #FFF;
+    box-shadow: 0px 10px 11px 6px rgba(0, 0, 0, 0.08), 0px -1px 4px 0px rgba(0, 0, 0, 0.08);
+}
+.material-acril-cart>img{
+    width: 100%;
+}
+.line-border{
+    height: 1px;
+    flex-shrink: 0;
+    align-self: stretch;
+    background: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 1160px) {
@@ -1355,6 +1477,99 @@ textarea{
 
     .m-tac{
         text-align: center;
+    }
+
+
+    .material-acril-popup-wraper{
+        overflow: scroll;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 98;
+        width: 100vw;
+        height: 100%;
+        background-color:rgba(0, 0, 0, 0.75);  
+    }
+    .material-acril-popup-container{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 22px 8px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 120px;
+        border-radius: 20px;
+        background: #FFF;
+    }
+    .material-acril-popup-faq{
+        flex-direction: column;
+        margin: 12px 4px;
+        height: 27px;
+        overflow: hidden;   
+    }
+        .material-acril-popup-faq>div.flex-col{
+            width: 100%;
+        }
+        .material-acril-popup-faq>div.flex-col>div.flex-row>h3{
+            flex: 1 0 0;
+        }
+        .material-acril-popup-faq-open{
+            height: auto;
+        }
+    .paragraph-hider{
+        position: relative;
+        overflow: hidden;
+    }
+        .paragraph-hider:active{
+            height: auto;
+        }
+    .more{
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0px;
+    }
+    .h-auto{
+        height: auto;
+    }
+
+    .preimushestva{
+        display: flex;
+        padding-right: 0px;
+        align-items: center;
+        gap: 2px;
+        border-radius: 4px;
+        padding-right: 6px;
+        color: #33B81D;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.84) 0%, rgba(255, 255, 255, 0.84) 100%), #33B81D;
+    }
+
+    .material-acril-cart-container{
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 12px;
+    }
+    .material-acril-cart{
+        display: flex;
+        padding-top: 6px;
+        padding-bottom: 12px;
+        flex-direction: column;
+        align-items: center;
+        flex: 1 0 0;
+        border-radius: 20px;
+        border: 1px solid rgba(93, 95, 105, 0.30);
+        background: #FFF;
+        box-shadow: 0px 10px 11px 6px rgba(0, 0, 0, 0.08), 0px -1px 4px 0px rgba(0, 0, 0, 0.08);
+    }
+    .material-acril-cart>img{
+        width: 100%;
+    }
+    .line-border{
+        height: 1px;
+        flex-shrink: 0;
+        align-self: stretch;
+        background: #000;
     }
 
 }
