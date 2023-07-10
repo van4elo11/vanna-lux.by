@@ -178,6 +178,9 @@ footer{
 .wrap{
     flex-wrap: wrap;
 }
+.wrap-rev{
+    flex-wrap: wrap-reverse;
+}
 
 /* END-FLEX */
 
@@ -375,6 +378,9 @@ p{
 }
 .gap24{
     gap: 24px;
+}
+.gap40{
+    gap: 40px;
 }
 
 .width100{
@@ -984,6 +990,7 @@ textarea{
 
 .material-acril-cart-container{
     display: flex;
+    overflow: visible;
     align-items: flex-start;
     gap: 10px;
     margin-top: 12px;
@@ -992,6 +999,8 @@ textarea{
     display: flex;
     padding-top: 6px;
     padding-bottom: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
     flex-direction: column;
     align-items: center;
     flex: 1 0 0;
@@ -1017,8 +1026,55 @@ textarea{
 
 
 
-
-
+.quiz{
+    display: flex;
+    width: 1160px;
+    height: 467px;
+    padding-left: 0px;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    border-radius: 24px;
+    background: #4552EC;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.12);
+    padding-left: 48px;
+}
+.quiz-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+}
+.quiz-text>h3{
+    color: #FFF;
+/* H3 */
+font-size: 32px;
+font-weight: 550;
+line-height: 120.523%;
+}
+.quiz-btn{
+    display: flex;
+    padding: 12px 24px;
+    align-items: flex-start;
+    gap: 10px;border-radius: 8px;
+    background: #FFF;
+    color: #4552EC;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 147%;
+}
+.quiz-img{
+    display: flex;
+    width: 700px;
+    height: 100%;
+    justify-content: center;
+    align-items: end;
+    flex-shrink: 0;
+}
 
 
 
@@ -1027,7 +1083,34 @@ textarea{
 
 
 @media (max-width: 1160px) {
-    
+    .quiz{
+        flex-direction: column-reverse;
+        width: calc(100% - 56px);
+        padding: 10px 12px 48px;
+        height: auto;
+        align-items: start;
+    }
+    .quiz-img{
+        width: 100%;
+    }
+        .quiz-img>img{
+            width: 100%;
+        }
+    .quiz-text>h3{
+        font-size: 22px;
+    }
+    .quiz-text{
+        margin-top: 32px;
+    }
+
+
+
+
+
+
+
+
+
 
     .massage-phone{
         height: 300px;
@@ -1546,6 +1629,7 @@ textarea{
 
     .material-acril-cart-container{
         display: flex;
+        overflow: visible;
         align-items: flex-start;
         gap: 10px;
         margin-top: 12px;
